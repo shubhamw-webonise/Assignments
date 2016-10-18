@@ -11,7 +11,7 @@ nav
 	font: inherit;
 	vertical-align: baseline;
 }
-footer, header {
+ header {
 	display: block;
 }
 
@@ -21,59 +21,70 @@ ul{
 }
 /* ------------------------------Header-----------------------------------------*/
 header{
-	overflow: hidden;
+	
 	background-color:#444444;
-	height: 50px;
-
+	padding-top: 8px;
+	padding-bottom: 7px;
 }
+
+
 .container{
 	width: 1170px;
 	margin: 0 auto;
+	
 }
+
 .logo{
 	background-color:#ff8000;
 	width: 140px;
 	height: 35px;
-	margin-top: 5px;
 	float: left;
 }
 
 .nav{
-	float:right;
-	margin:-5px;
-}
+	float:left;
+	margin-top:7.5px;
+	margin-bottom: 7.5px;
+	}
+
 
 .nav li{
-	float: left;
-	width: 250px;
+	float:left;
+	line-height:20px;
 	text-align:center;
+	margin-right: 50px;
+
+}
+
+.clear{
+	clear: both;
 }
 
 .nav a{
-	font-size: 18px;
+	font-size:18px;
 	color: #aaaaaa;
 	text-decoration: none;
 }
-.nav a:hover{
-	text-decoration: underline;
-}
 
-/* ----------------------Gallery------------------------------------------------------*/
+
+/*----------------------Gallery------------------------------------------------------*/
 .gallery{
 	background-color: #71c4ea;
 	height:485px;
 }
-/* -----------------------------How it works------------------------------------------*/
+/*-----------------------------How it works------------------------------------------*/
 .content{
 	width: 1170px;
-	margin: 0 auto;
+	margin-top:64px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .content h1{
+	display:block;
 	color: #444444;
 	font-size: 36px;
 	text-align: center;
-	margin-top: 64px;
-	margin-bottom: 70px;
+	
 }
 
 .services{
@@ -86,8 +97,8 @@ header{
 	background-color: #efefef;
 	height: 140px;
 	width: 140px;
-	border-radius: 80px;
-	margin:0 auto;
+	border-radius:50%;
+	
 }
 
 .services li{
@@ -98,38 +109,48 @@ header{
 }
 
 .services li p{
+	margin-top:15px;
+	display: inline-block;
+	float: left;
 	color: #888888;
 	font-size: 18px;
 	text-align:center;
-	width:120px;
-	margin: 0 auto;  
+	width:140px;
 }
+.services li p:hover{
+	color: #444444;
+
+	}
+
+
 /* ----------------------Footer------------------------------------------------------*/
 footer{
-	overflow: hidden;
-	width:100%;
-	height: 100%;
-	background:#ececec;
+	background: #ececec;
+	clear: both;
+	padding-bottom: 15px;
+	padding-top: 25px;
 }
-
 .nav-bottom{
-float: right;
-margin: 0 auto;
-
+	width: 400px;
+	margin:0 auto;
+	text-align: center;
 }
+
 
 .nav-bottom li{
-	float: left;
-	width: 250px;
+	float:right;
+	line-height:20px;
+	margin-right:20px;
+
 }
 
-.nav-bottom li a{
+
+
+.nav-bottom a{
+	font-size:16px;
 	color: #ff8000;
-	size: 16px;
-	text-decoration:none;
-
+	text-decoration: none;
 }
-
-.nav-bottom li a:hover{
+.nav-bottom a:hover{
 	color:#444444;
 }
