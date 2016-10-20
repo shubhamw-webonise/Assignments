@@ -54,25 +54,29 @@ ol, ul {
 	float: left;
 	background-color:#1166ee;
 	color: #fff;
-	border-radius:10px; 
-	margin:20px 0px 0px 20px;
+	border-radius:15px;
+	padding: 7px; 
+	margin:13px 0px 0px 11px;
 	border: none;
 	cursor: pointer;
 }
 
 .user{
 	float: right;
-	border-left: 1px solid #cccccc;
-	padding-top: 15px;
+
 }
 
 .user a{
 	display: block;
 	float: left;
-	padding: 5px 15px 0px 15px;
+	padding: 14px 15px 0px 13px;
 }
 
-.cart,.dropdowm img{
+a.cart{
+	padding-top: 20px;
+	padding-left: 7px;
+}
+a.cart,.dropdowm img{
 	display: block;
 }
 
@@ -80,13 +84,13 @@ ol, ul {
 .drop-down{
 	display: block;
 	float: right;
-	padding: 20px 20px 0px 0px;
+	padding: 15px 20px 0px 0px;
 }
 
 
 .user-name{
 	float:left;
-	padding:0px 5px 0px 5px;
+	padding:10px 5px 0px 5px;
 }
 .user-name span{
 	float: left;
@@ -109,11 +113,16 @@ ol, ul {
 .nav li{
 	float: left;
 	border-left: 1px solid #cccccc;
-	padding: 15px;
+	padding: 11px 10px 16px 16px;
 }
 .nav li:first-child{
-	padding: 22px 20px 15px 20px;
+	padding: 19px;
 }
+
+.nav li:last-child{
+	border-right: 1px solid #cccccc;
+}
+
 
 .nav li a,.nav li a img{
 	display: block;
