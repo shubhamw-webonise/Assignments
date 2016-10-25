@@ -1,0 +1,506 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, 
+a,img,ol, ul, li,footer, header,nav
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+footer,header,menu,nav {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;  
+}
+a{
+	text-decoration: none;
+	text-decoration-color: transparent;
+}
+
+/*--------Css begins---------------*/
+
+/*--------Header---------------*/
+header{
+	background-color: #fff;
+}
+
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.logo{
+	float: left;
+	margin:30px 0px 25px; 
+}
+
+.signUp,.login{
+	float: right;
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 16px;
+	color: #222222;
+	border: 1px solid #fff;
+	padding: 10px 20px;
+	margin-top:20px;
+	margin-left: 5px; 
+
+}
+
+.signUp:hover,.login:hover{
+	color: #4caf50;
+	border-color: #4caf50;
+
+}
+
+.nav{
+	float: right;
+	margin-top:30px; 
+}
+
+.nav li{
+	float: left;
+	margin-right:29px;
+}
+.nav li:last-child{
+	margin-right:10px;
+
+}
+
+.nav li a{
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 17px;
+	color: #222222;
+
+}
+
+.nav li a:hover{
+	color: #71be44;
+}
+
+.clear{
+	clear: both;
+}
+
+/*--------Section One-------------*/
+
+.sectionOne{
+	background: #333 url(../images/bg-image.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	height: 480px;
+	text-align: center;
+}
+
+.content{
+	padding:212px 0 0 0;
+}
+
+.content h1{
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 45px;
+	font-weight: 400;
+	line-height: 47px;
+	color: #fff;
+}
+
+.content p{
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #eeeeee;
+	margin: 20px 0 0 0px;
+}
+
+.content a{
+	display: inline-block;
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 20px;
+	color: #fff;
+	border-radius: 10px;
+	padding: 15px 43px;
+	background-color: #e74c3c;
+	margin: 45px 0 0 0px;
+}
+
+/*--------Section Two-------------*/
+
+.sectionTwo{
+	background-color: #fff;
+	text-align: center;
+}
+
+.wrapper{
+	width: 568px;
+	margin: 65px auto 0;
+	border:1px solid #dddddd;
+}
+.search{
+	float: left;
+	width: 250px;
+	padding: 10px 13px;
+	border:none;
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 27px;
+}
+
+.wrapper a{
+	float: right;
+	display: inline-block;
+	margin: 15px 15px 0 0;
+}
+.searchLogo{
+	float: right;
+	background-image: url(../images/search.png);
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	
+}
+
+.or{
+	display: inline-block;
+	margin-top:40px;
+}
+
+.border{
+	display: inline-block;
+	width:30px;
+	border-bottom:1px solid #e7e7e7;
+	vertical-align:middle;
+}
+
+.text{
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 16px;
+	color: #aaaaaa;
+	margin: 0 10px;
+	vertical-align:middle;
+}
+
+.trendVeggies{
+	margin-top: 45px;
+}	
+
+.trendVeggies span{
+	display: inline-block;
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 32px;
+	color: #222;
+}
+
+.navMiddle{
+	margin-top: 40px;
+	display: inline-block;
+
+}
+
+.navMiddle li{
+	float: left;
+	margin-right: 60px; 
+}
+.navMiddle li:nth-child(6){
+	margin: 0px;
+}
+
+.navMiddle li.clear{
+	float: none;
+	margin:0px;
+}
+
+.circle{
+	display: table-cell;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	border: 1px solid #4caf50;
+	vertical-align: middle;
+}
+
+
+.circle:hover{
+	background-color: #4caf50;
+}
+
+.navMiddle li span{
+	margin-top: 10px;
+	display: inline-block;
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	color: #000;
+}
+/*--------Section Three-------------*/
+
+.sectionThree{
+	margin-top: 50px;
+	background-color: #f8f8f8;
+}
+
+.tomatoes{
+	padding:50px 0px;
+	margin-left:62px; 
+}
+
+.bgWrapper{
+	float: left;
+	height: 220px;
+	width: 220px;
+	border-radius: 50%;
+	margin: 0px 80px 0px 0px;
+}
+
+.itemInfo, .weeks, .easy{
+	float: left;
+}
+
+.itemInfo h2{
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 26px;
+	font-weight: 300;
+	line-height: 28px;
+	color: #000;
+}
+
+.weeks{
+	margin: 23px 30px 0 0;
+}
+
+.easy{
+	float: left;
+	margin-top: 23px;
+}
+
+.calendar{
+	float: left;
+	background-image: url(../images/calendar.png);
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px;
+	margin-right:10px;
+}
+
+.easyIcon{
+	float: left;
+	background-image: url(../images/easy.png);
+	background-repeat: no-repeat;
+	height: 21px;
+	width: 20px;
+	margin-right:10px;
+}
+
+.weeks span, .easy span{
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	color: #222222;
+}
+
+.itemInfo p{
+	margin-top: 23px;
+	width: 590px;
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #666666;
+}
+
+.itemInfo a{
+	display: inline-block;
+	margin-top: 12px;
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 17px;
+	color: #e74c3c;
+	padding: 10px 20px;
+	border: 1px solid #e74c3c;
+	border-radius: 5px;
+}
+/*--------Section Four-------------*/
+
+.sectionFour{
+	background: #333 url(../images/bg-how.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	height: 511px;
+	text-align: center;
+}
+.howItWorks{
+	padding-top: 58px;
+}
+.howItWorks h1{
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 32px;
+	color: #fff;
+	margin: 0 0 42px 0;
+}
+
+.howItWorks ul{
+	margin: 0 auto;
+	width: 526px;
+	text-align: left;
+	list-style-image: url(../images/bullet.png);
+	list-style-position:outside;
+	
+}
+
+.howItWorks ul li{
+	margin-bottom: 30px;
+	
+}
+
+.howItWorks ul li:last-child{
+	margin:0;
+}
+
+
+
+.howItWorks ul li p{
+	padding-left: 10px;
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #fff;
+}
+
+/*------------------Section Five-----------------*/
+
+
+.urbanFarmer{
+text-align: center;
+padding-top: 58px;
+}
+
+.urbanFarmer h1{
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 32px;
+	color: #000;
+}
+
+.userIcon{
+	float: left;
+	margin-right: 15px;
+}
+.userInfo{
+	float: left;
+	margin-top: 15px;
+}
+
+.userInfo h2{
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #444444;
+}
+
+.userInfo ul{
+	margin-top: 5px;
+}
+.userInfo ul li{
+	float: left;
+	margin-right:5px; 
+}
+.userInfo li.clear{
+	float: none;
+	margin: 0;
+}
+
+.sectionFive .itemInfo{
+	margin:50px 0 40px 97px; 
+
+}
+
+.sectionFive .weeks, .sectionSix .weeks{
+	margin-top: 18px;
+}
+
+.sectionFive .easy, .sectionSix .easy{
+	margin-top: 18px;
+}
+.sectionFive .itemInfo p, .sectionSix .itemInfo p{
+	margin-top:14px; 
+}
+
+.itemInfo .heading{
+	margin-top: 19px;
+}
+
+.bgImage{
+	float: left;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	margin: 50px 0px 0px 80px;
+}
+/*------------------Section Six-----------------*/
+
+.sectionSix{
+	background-color: #f8f8f8;
+	padding: 60px 0 51px 0;
+}
+.sectionSix .bgImage{
+	margin: 0px 80px 0 97px;
+}
+
+.loadStories{
+	padding: 30px 0 23px 0;
+	text-align: center;
+	background-color: #fff;
+}
+
+.loadStories a{
+	display: inline-block;
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 20px;
+	color: #e74c3c;
+}
+
+footer{
+	border-top: 1px solid #eeeeee;
+	padding: 17px 0 21px 0;
+}
+
+.navBottom li{
+	float: left;
+	margin-right: 20px;
+}
+
+.navBottom li.clear{
+	float: none;
+	margin:0;
+}
+
+.navBottom li a{
+	font-family: 'Arial' , sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 12px;
+	color: #888888;
+}
