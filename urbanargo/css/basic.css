@@ -8,7 +8,7 @@ a,img,ol, ul, li,footer, header,nav
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-footer,header,menu,nav {
+footer,header,menu,nav,a {
 	display: block;
 }
 body {
@@ -19,7 +19,7 @@ ol, ul {
 }
 a{
 	text-decoration: none;
-	text-decoration-color: transparent;
+	
 }
 
 /*--------Css begins---------------*/
@@ -27,6 +27,7 @@ a{
 /*--------Header---------------*/
 header{
 	background-color: #fff;
+	padding: 20px 0 15px;
 }
 
 .container{
@@ -35,8 +36,13 @@ header{
 }
 
 .logo{
+	display:block;
 	float: left;
-	margin:30px 0px 25px; 
+	padding:10px 10px 13px 10px; 
+}
+
+.logo img{
+	display:block;
 }
 
 .signUp,.login{
@@ -48,9 +54,11 @@ header{
 	color: #222222;
 	border: 1px solid #fff;
 	padding: 10px 20px;
-	margin-top:20px;
 	margin-left: 5px; 
+}
 
+.login{
+	margin:0;
 }
 
 .signUp:hover,.login:hover{
@@ -61,25 +69,28 @@ header{
 
 .nav{
 	float: right;
-	margin-top:30px; 
+	 
 }
 
 .nav li{
 	float: left;
-	margin-right:29px;
+	/*margin-right:9px;*/
 }
-.nav li:last-child{
-	margin-right:10px;
 
-}
 
 .nav li a{
+	padding: 10px 19px 10px 10px;
+	display: block;
 	font-family: 'Open Sans' , sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 17px;
 	color: #222222;
 
+}
+
+.nav a.farms{
+	padding-right: 21px;
 }
 
 .nav li a:hover{
@@ -126,7 +137,7 @@ header{
 	font-weight: 600;
 	line-height: 20px;
 	color: #fff;
-	border-radius: 10px;
+	border-radius: 3px;
 	padding: 15px 43px;
 	background-color: #e74c3c;
 	margin: 40px 0 0 0px;
@@ -137,29 +148,40 @@ header{
 .sectionTwo{
 	background-color: #fff;
 	text-align: center;
-	padding: 60px 0 50px 0;
+	padding: 68px 0 45px 0;
 }
 
-.wrapper{
+/*.wrapper{
 	width: 566px;
 	margin: 0 auto;
-	border:1px solid #dddddd;
-}
+	/*border:1px solid #dddddd;
+}*/
 .search{
-	float: left;
-	width: 250px;
+	outline: none;
+	width: 566px;
+	border:1px solid #dddddd;
 	padding: 10px 13px;
-	border:none;
 	font-family: 'Open Sans' , sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 27px;
 }
-
+/*
 .wrapper a{
 	float: right;
 	display: inline-block;
 	margin: 15px 15px 0 0;
+}*/
+
+.submit{
+	border:none;
+	outline: none;
+	background: #fff url(../images/search.png);
+	margin-left:-40px;
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	padding: 0;
 }
 .searchLogo{
 	float: right;
@@ -171,7 +193,6 @@ header{
 }
 
 .or{
-	display: inline-block;
 	margin-top:40px;
 }
 
@@ -194,9 +215,10 @@ header{
 
 .trendVeggies{
 	margin-top: 45px;
-}	
+	display: inline-block;
 
-.trendVeggies span{
+}
+.trendVeggies h2{
 	display: inline-block;
 	font-family: 'Open Sans' , sans-serif;
 	font-size: 30px;
@@ -205,21 +227,18 @@ header{
 	color: #222;
 }
 
-.navMiddle{
+.trendVeggies ul{
 	margin-top: 40px;
-	display: inline-block;
-
 }
-
-.navMiddle li{
+.trendVeggies ul li{
 	float: left;
 	margin-right: 60px; 
 }
-.navMiddle li:nth-child(6){
+.trendVeggies ul li:nth-child(6){
 	margin: 0px;
 }
 
-.navMiddle li.clear{
+.trendVeggies ul li.clear{
 	float: none;
 	margin:0px;
 }
@@ -238,7 +257,7 @@ header{
 	background-color: #4caf50;
 }
 
-.navMiddle li span{
+.trendVeggies ul li span{
 	margin-top: 10px;
 	display: inline-block;
 	font-family: 'Open Sans' , sans-serif;
@@ -258,7 +277,8 @@ header{
 	margin-left:62px; 
 }
 
-.bgWrapper{
+.tomatoes img{
+	display: block;
 	float: left;
 	height: 220px;
 	width: 220px;
@@ -276,15 +296,20 @@ header{
 	font-weight: 300;
 	line-height: 28px;
 	color: #000;
+	
+}
+
+.tomatoes .itemInfo h2{
+margin-bottom: 23px;
 }
 
 .weeks{
-	margin: 23px 30px 0 0;
+	margin: 0 30px 0 0;
 }
 
 .easy{
 	float: left;
-	margin-top: 23px;
+
 }
 
 .calendar{
@@ -340,8 +365,11 @@ header{
 .sectionFour{
 	background: #333 url(../images/bg-how.jpg) no-repeat 50% 50%;
 	background-size: cover;
-	padding: 55px 0 244px 0;
 	text-align: center;
+}
+
+.howItWorks{
+	padding: 55px 0 0 0;
 }
 
 
@@ -383,6 +411,11 @@ header{
 	color: #fff;
 }
 
+.howItWorks img{
+	display: inline-block;
+	margin-top:24px; 
+}
+
 /*------------------Section Five-----------------*/
 
 .sectionFive{
@@ -390,6 +423,7 @@ header{
 }
 .urbanFarmer{
 text-align: center;
+margin-bottom: 50px;
 }
 
 .urbanFarmer h1{
@@ -398,6 +432,7 @@ text-align: center;
 	font-weight: 300;
 	line-height: 32px;
 	color: #000;
+	
 }
 
 .userIcon{
@@ -430,23 +465,18 @@ text-align: center;
 }
 
 .sectionFive .itemInfo{
-	margin:50px 0 0 97px; 
+	margin:0 0 0 97px; 
 
 }
 
-.sectionFive .weeks, .sectionSix .weeks{
-	margin-top: 18px;
-}
 
-.sectionFive .easy, .sectionSix .easy{
-	margin-top: 18px;
-}
 .sectionFive .itemInfo p, .sectionSix .itemInfo p{
 	margin-top:14px; 
 }
 
 .itemInfo .heading{
-	margin-top: 19px;
+	margin:19px 0 18px 0;
+
 }
 
 .bgImage{
@@ -454,7 +484,7 @@ text-align: center;
 	height: 300px;
 	width: 300px;
 	border-radius: 50%;
-	margin: 50px 0px 0px 80px;
+	margin: 0 0px 0px 80px;
 }
 /*------------------Section Six-----------------*/
 
