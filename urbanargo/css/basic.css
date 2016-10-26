@@ -95,12 +95,11 @@ header{
 .sectionOne{
 	background: #333 url(../images/bg-image.jpg) no-repeat 50% 50%;
 	background-size: cover;
-	height: 480px;
 	text-align: center;
 }
 
 .content{
-	padding:212px 0 0 0;
+	padding:212px 0 93px 0;
 }
 
 .content h1{
@@ -117,7 +116,7 @@ header{
 	font-weight: 400;
 	line-height: 22px;
 	color: #eeeeee;
-	margin: 20px 0 0 0px;
+	margin: 18px 0 0 0px;
 }
 
 .content a{
@@ -130,7 +129,7 @@ header{
 	border-radius: 10px;
 	padding: 15px 43px;
 	background-color: #e74c3c;
-	margin: 45px 0 0 0px;
+	margin: 40px 0 0 0px;
 }
 
 /*--------Section Two-------------*/
@@ -138,11 +137,12 @@ header{
 .sectionTwo{
 	background-color: #fff;
 	text-align: center;
+	padding: 60px 0 50px 0;
 }
 
 .wrapper{
-	width: 568px;
-	margin: 65px auto 0;
+	width: 566px;
+	margin: 0 auto;
 	border:1px solid #dddddd;
 }
 .search{
@@ -250,7 +250,6 @@ header{
 /*--------Section Three-------------*/
 
 .sectionThree{
-	margin-top: 50px;
 	background-color: #f8f8f8;
 }
 
@@ -341,12 +340,11 @@ header{
 .sectionFour{
 	background: #333 url(../images/bg-how.jpg) no-repeat 50% 50%;
 	background-size: cover;
-	height: 511px;
+	padding: 55px 0 244px 0;
 	text-align: center;
 }
-.howItWorks{
-	padding-top: 58px;
-}
+
+
 .howItWorks h1{
 	font-family: 'Open Sans' , sans-serif;
 	font-size: 30px;
@@ -387,10 +385,11 @@ header{
 
 /*------------------Section Five-----------------*/
 
-
+.sectionFive{
+	padding:58px 0 40px 0;
+}
 .urbanFarmer{
 text-align: center;
-padding-top: 58px;
 }
 
 .urbanFarmer h1{
@@ -431,7 +430,7 @@ padding-top: 58px;
 }
 
 .sectionFive .itemInfo{
-	margin:50px 0 40px 97px; 
+	margin:50px 0 0 97px; 
 
 }
 
@@ -492,6 +491,10 @@ footer{
 	margin-right: 20px;
 }
 
+.navBottom li:last-child{
+	margin: 0;
+}
+
 .navBottom li.clear{
 	float: none;
 	margin:0;
@@ -503,4 +506,9 @@ footer{
 	font-weight: 400;
 	line-height: 12px;
 	color: #888888;
+}
+
+.navBottom li a:hover{
+	color: #4caf50;
+
 }
