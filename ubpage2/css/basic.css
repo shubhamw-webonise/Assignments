@@ -76,28 +76,34 @@ header{
 .wrapper{
 	float: left;
 	border-bottom: 1px solid #eeeeee;
-
+	position: relative;
+	width: 230px;
 }
 
 .text{
 	border: none;
 	outline: none;
-	padding: 5px 10px;
 	font-family: 'Open Sans' , sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 16px;
 	color: #aaaaaa;
+	position: relative;
+	top: -5px;
+	left: 10px;
 }
 
 .searchLogo{
 	border:none;
+	padding: 0;
 	outline: none;
 	background: url(../images/sprite.png) no-repeat;
 	background-position: 0px 0px;
 	height: 24px;
 	width: 24px;
-	margin-right: 24px;
+	position:relative;
+	top:0px;
+	right: -25px;
 }
 
 .user{
@@ -221,8 +227,8 @@ vertical-align: middle;
 
 
 .userWrapper{
-	padding: 24px 0 30px 26px;
-	margin-left: 24px;
+	padding: 24px 0 30px 0px;
+	margin-left: 40px;
 	border-top: 1px solid #eaeaea;
 }
 
@@ -288,7 +294,7 @@ vertical-align: middle;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 16px;
-	color: #fff;
+	color: #4caf50;
 	text-align: center;
 }
 
@@ -298,6 +304,7 @@ vertical-align: middle;
 }
 
 .btnWrap a:hover{
+	color: #fff;
 	background-color: #4caf50;
 }
 
@@ -324,11 +331,11 @@ vertical-align: middle;
 .userStats{
 	float:left;
 	margin-top: 18px;
+	width: 986px; 
 }
 
 .userStats ul{ 	
 	display: inline-block;
-	margin-right: 483px;
 }
 
 .userStats ul li{
@@ -500,13 +507,27 @@ li.clear{
 	background-color: #079c0d;
 }
 
+.layer{
+	display: none;
+}
 .box:hover .midBox a{
 	display: block;
 }
 
 .box:hover .boxHeading{
 	margin-top: -70px;
+	position: relative;
+}
 
+.box:hover .layer{
+	display: block;
+	background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
 }
 
 .box:hover .boxHeading img{
