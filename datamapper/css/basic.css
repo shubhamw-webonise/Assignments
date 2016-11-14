@@ -148,7 +148,7 @@ header{
 	background-position: -100px -4px;
 	width: 21px;
 	height: 21px;
-	margin-right: 9px;	
+	margin-right: 5px;	
 }
 
 .survey{
@@ -200,7 +200,7 @@ header{
 .boxWrapper{
 	border:1px solid #d4d4d4;
 	box-shadow: 0 3px 3px -2px rgba(187,187,187,0.75);
-	margin-bottom:12px;
+	margin-bottom:14px;
 }
 
 .heading{
@@ -256,7 +256,7 @@ header{
 }
 
 .siteContent{
-	padding: 20px 65px 25px 33px;
+	padding: 18px 65px 23px 33px;
 	background-color: #fff;
 }
 
@@ -271,8 +271,7 @@ header{
 }
 
 .siteLoc{
-	float: left;
-	margin-left: 166px;
+	float: right;
 	max-width: 130px;
 }
 
@@ -525,6 +524,8 @@ span.colorLidar{
 	border-bottom: 1px solid #fff;
 }
 
+
+
 .borderWrap{
 	float: right;
 	width: 304px;
@@ -641,6 +642,7 @@ span.colorLidar{
 }
 
 .dateBox{
+	text-align: right;
 	float:right;
 }
 
@@ -725,4 +727,8 @@ footer a{
 	font-weight: 400;
 	line-height: 24px;
 	color: #c1272d;
+}
+
+footer a:hover{
+	text-decoration: underline;
 }
