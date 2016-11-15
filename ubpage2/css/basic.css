@@ -308,7 +308,7 @@ vertical-align: middle;
 	background-color: #4caf50;
 }
 
-.btnWrap a .message{
+.msg:hover .message{
 	display: inline-block;
 	background: url(../images/sprite.png) no-repeat;
 	background-position: -34px -45px;
@@ -318,10 +318,28 @@ vertical-align: middle;
 	margin: 0 14px 0 0px;
 }
 
-.btnWrap a .follow{
+.btnWrap a .message{
+	display: inline-block;
+	background: url(../images/chat.png) no-repeat;
+	height: 20px;
+	width: 22px;
+	vertical-align: middle;
+	margin: 0 14px 0 0px;
+}
+
+.followHover:hover .follow{
 	display: inline-block;
 	background: url(../images/sprite.png) no-repeat;
 	background-position: -2px -45px;
+	height: 21px;
+	width: 21px;
+	vertical-align: middle;
+	margin: 0 14px 0 0px;
+}
+
+.btnWrap a .follow{
+	display: inline-block;
+	background: url(../images/plus.png) no-repeat;
 	height: 21px;
 	width: 21px;
 	vertical-align: middle;
@@ -380,6 +398,7 @@ vertical-align: middle;
 
 .userStats a:hover{
 	background-color: #4caf50;
+	color: #fff;
 }
 
 .userStats a .share{
