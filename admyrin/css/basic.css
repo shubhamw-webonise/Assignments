@@ -1,0 +1,880 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, 
+a,img,ol, ul, li,footer, header,nav
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+footer,header,menu,nav,section{
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;  
+}
+
+a{
+	text-decoration: none;
+}
+
+/*--------Css begins---------------*/
+body{
+	font-family:'Open Sans' , sans-serif;
+	font-weight: 400;
+}
+
+h1{
+	font-family: 'Glegoo', serif;
+}
+
+h2{
+	font-size: 28px;
+	line-height: 30px;
+	font-weight: 300;
+	color: #333;
+}
+h3{
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #333;
+}
+.spriteIcon{
+	background: url(../images/sprite.png) no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*--------Header---------------*/
+
+header{
+	padding: 5px 0px 9px 0px;
+}
+
+.container{
+	width: 940px;
+	margin: 0 auto;
+}
+.clear{
+	clear: both;
+}
+
+.logo{
+	float: left;
+	display: block;
+	margin-right: 20px;
+}
+
+.logo img{
+	display: block;
+}
+
+.nav{
+	float: left;
+}
+
+.nav li{
+	float: left;
+	margin-right: 19px;
+}
+
+.nav li:last-child{
+	margin: 0;
+}
+
+.nav li a{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 26px;
+	color: #ee1c25;
+	border-bottom: 1px solid #fff;
+	padding-top: 9px;
+}
+
+.nav li a.active,.nav li a:hover{
+	border-bottom: 1px solid #ee1c25;		
+}
+
+.dropDownIcon{
+	background-position: 0 -13px;
+	width: 10px;
+	height: 4px;
+}
+
+.navIcon{
+	float: right;
+	margin-top: 10px;
+}
+
+.navIcon li{
+	display: inline-block;
+	margin-right: 25px;
+	vertical-align: middle;
+}
+
+.navIcon li:last-child{
+	margin: 0;
+}
+
+.navIcon a{
+	display:block;
+	font-size: 13px;
+	line-height: 21px;
+	color: #ee1c25;
+}
+
+.navIcon .usd{
+	border-bottom: 1px solid #fff;
+}
+.navIcon .usd:hover{
+	border-bottom: 1px solid #ee1c25;
+}
+
+.searchIcon{
+	background-position: -87px -6px;
+	width: 14px;
+	height: 14px;
+}
+.accountIcon{
+	background-position: -54px -4px;
+	width: 13px;
+	height: 16px;
+}
+.notifyIcon{
+	background-position: -20px -2px;
+	width: 25px;
+	height: 21px;
+}
+
+/*-------------Section Banner---------------*/
+
+.banner{
+	/*background: url(../images/hero-banner.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	text-align: left;*/
+	position: relative;
+
+}
+
+.banner img{
+	display: block;
+	width: 100%;
+	height: 601px;
+}
+
+.bannerContent{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    text-align: center;
+}
+
+.contentWrap{
+	display: block;
+	margin-left: 60%;
+	margin-top: 10%;
+    text-align: left;
+}
+
+.contentWrap h1{
+	display: inline-block;
+	font-size: 60px;
+	line-height: 80px;
+	color: #fff;
+	border-bottom: 3px solid #ee1c25;
+}
+
+.contentWrap h2{
+	color: #fff;
+	margin-top: 8px;
+}
+
+.contentWrap p{
+	max-width: 320px;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 16px;
+	color: #fff;
+	margin: 5px 0 15px 0px;
+}
+.contentWrap a{
+	margin-right: 5px;
+}
+
+.btnWhite{
+	display: inline-block;
+	border-radius: 20px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 18px;
+	color: #fff;
+	padding: 10px 17px;
+	text-align: center;
+	border: 1px solid #fff;
+}
+
+.btnWhite:hover{
+	background-color: #ee1c25;
+}
+
+.btnWhite span{
+	display: inline-block;
+	min-width: 120px;
+}
+
+.pageIndicator{
+	display:inline-block;
+	position: absolute;
+    top: 75%;
+    right: 50%;
+}
+
+.pageIndicator li{
+	float: left;
+	height: 5px;
+	width: 5px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin-right: 8px;
+}
+.pageIndicator li:nth-child(3){
+	background-color: #fff;
+}
+
+
+.bannerFooter{
+	display: inline-block;
+	border-top: 1px solid #564f4d;
+	padding-top: 20px;
+	margin-top: 130px;
+
+}
+
+.bannerFooter li{
+	float: left;
+	text-align: left;
+	width: 300px;
+	margin-right: 20px;
+}
+.bannerFooter li:last-child{
+	margin:0;
+}
+
+.bannerFooter p{
+	float: left;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 14px;
+	color: #fff;
+	white-space: pre;
+}
+
+.bannerFooter p span{
+	font-weight: 600;
+}
+
+
+.iconWrap{
+	float: left;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	margin-right: 15px;
+	position: relative;
+}
+
+.arrowIcon{
+	background-position: -117px -9px;
+	width: 13px;
+	height: 10px;
+	position: absolute;
+	top: 25%;
+	left: 24%;
+}
+.bagIcon{
+	background-position: -177px -6px;
+	width: 9px;
+	height: 13px;
+	position: absolute;
+	top: 20%;
+	left: 35%;
+}
+.phoneIcon{
+	background-position: -147px -7px;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 20%;
+	left: 24%;
+}
+
+
+.sliderIconRight{
+	background-position: 0px -70px;
+	width: 19px;
+	height: 37px;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	cursor: pointer;
+}
+
+.sliderIconLeft{
+	background-position: -39px -70px;
+	width: 19px;
+	height: 37px;
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	cursor: pointer;
+}
+
+/*------------Saree Types-----------*/
+
+.sareeTypes{
+	padding: 35px 0 50px 0;
+	text-align: center;
+}
+
+.sareeTypes h1{
+	font-size: 40px;
+	line-height: 42px;
+	font-weight: 400;
+	color: #999;
+	margin-bottom: 20px;
+}
+
+.border{
+	display: inline-block;
+    width: 100px;
+    border-bottom: 1px solid #e7e7e7;
+    vertical-align: middle;
+}
+	
+.text{
+	display: inline-block;
+	vertical-align: middle;
+	margin:0 15px;
+}
+
+.sareeTypes h3{
+	margin-top: 25px;
+}
+
+.designList{
+	display: inline-block;
+	margin: 45px 0px 75px 0px;
+}
+
+.designList li{
+	float: left;
+	width: 460px;
+	margin-right: 20px;
+	position: relative;
+}
+
+.designList li:last-child{
+	margin: 0;
+}
+
+.designList li img{
+	display: block;
+}
+
+.designInfo{
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	padding: 35px 0px 40px 0px;
+}
+
+.designInfo .designName{
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 205px;
+	text-align: left;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.designInfo .btnWhite{
+	margin-left: 50px;
+	vertical-align: middle;
+}
+
+
+.bollywoodLehenga{
+	display: inline-block;
+	border: 1px solid #eee;
+	margin: 45px 0px 10px;
+}
+
+.bollywoodLehenga li{
+	float: left;
+	width: 312px;
+	cursor: pointer;
+}
+
+.boxHeading{
+	text-align: left;
+	padding: 15px 0 0 20px;
+	border-bottom: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+.boxHeading h3{
+	margin:0;
+}
+
+.boxHeading span{
+	display: inline-block;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #b4b4b4;
+}
+
+.boxContent{
+	padding: 9px 0px;
+	position: relative;
+}
+
+.boxContent img{
+	display: inline-block;
+}
+
+.btnWrapper{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 25%;
+	width: 155px;
+	padding-top: 320px;
+}
+
+.btnWrapper .btnWhite{
+	margin-bottom: 15px;
+	display: block;
+}
+
+.bollywoodLehenga li:hover .btnWrapper{
+	display:inline-block;	
+}
+
+
+.bollywoodLehenga li:hover .boxHeading h3{
+	color: #ee1c25;
+}
+
+.sareeTypes .pageIndicator{
+	position: static;
+	margin-bottom: 55px;
+}
+
+.sareeTypes .pageIndicator li{
+	border: 1px solid #a4a4a4;
+}
+
+.sareeTypes .pageIndicator li:nth-child(3){
+	background-color: #999;
+}
+
+/*------------Banner Ombree Digital--------*/
+
+.ombre img{
+	display: block;
+	width: 100%;
+	height: 611px;	
+}
+
+.ombreWrap{
+	margin-top: 90px;
+	margin-left: 50%;
+	text-align: left;
+}
+
+.ombreWrap h2{
+	color: #000;
+}
+
+.ombreWrap p{
+	display: inline-block;
+	font-size: 13px;
+	line-height: 15px;
+	max-width: 320px;
+	margin-top: 10px;
+	color: #8c847d;
+}
+
+.continue{
+	display: block;
+	font-size: 13px;
+	line-height: 15px;
+	color: #000;
+	margin-top: 12px;
+}
+.continue:hover{
+	text-decoration: underline;
+}
+
+.ombreWrap .btnSmall{
+	display: block;
+	width: 150px;
+	padding: 10px 0px;
+	margin-top: 15px;
+}
+
+.sareeDesigns{
+	display: inline-block;
+	margin-top: 80px;
+}
+
+.sareeDesigns li {
+	margin-right: 20px;
+	position: relative;
+	float: left;
+
+}
+.sareeDesigns li:last-child{
+	margin-right:0;
+
+}
+.sareeDesigns li img{
+	display: block;
+	width: 220px;
+	height: 212px;
+}
+
+.sareeDesigns .btnWhite{
+	position: absolute;
+	bottom: 10px;
+	right:  60px;
+	padding:10px;
+	margin-bottom: 0px;
+}
+
+.sareeDesigns .btnWhite span{
+	min-width: 80px;
+}
+
+/*------------View story---------*/
+.viewStory{
+	text-align: center;
+	padding: 28px 0 42px 0;
+}
+
+
+.logoFull{
+	display: inline-block;
+}
+.logoFull img{
+	display: block;
+}
+
+.viewStory p{
+	margin-top: 15px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #000;
+}
+
+.viewStory .btnWhite{
+	color: #ed1c24;
+	border: 1px solid #ed1c24;
+	margin-top: 15px;
+	padding: 10px 25px;
+}
+
+.viewStory .btnWhite:hover{
+	color: #fff;
+}
+
+/*------------Footer---------*/
+.footerLinks{
+	padding: 40px 0px 0px 0px;
+	background-color: #f8f8f8;
+	border-top: 1px solid #ddd;
+	position: relative; 
+}
+
+.scrollTop{
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+	top: 20%;
+	right: 10%;
+}
+
+.scrollTop a{
+	display: inline-block;
+	vertical-align: middle;
+	height: 23px;
+	width: 23px;
+	border:1px solid #ed1c24;
+	border-radius: 50%;
+}
+
+.scrollTop span{
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-size: 11px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #ed1c24;
+	margin-top: 5px;
+}
+
+.scrollIcon{
+	background-position: -206px -10px;
+	width: 11px;
+	height: 6px;
+}
+
+.column{
+	float: left;
+	margin-right: 50px;
+}
+
+.column h1{
+	font-size: 18px;
+	line-height: 34px;
+	font-weight: 400;
+	color: #868686;
+	border-bottom: 3px solid #ccc;
+	width: 140px;
+}
+
+.columnItems{
+	margin-top: 10px;
+}
+
+.columnItems a{
+	font-size: 14px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #000;
+}
+
+.columnItems a:hover{
+	color: #ed1c24;
+}
+
+.newsLetter{
+margin-right: 0px;
+float: right;
+}
+.newsLetter h1{
+	border: none;
+	width: initial;
+}
+
+
+.newsLetter span{
+	display: block;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 400;
+	color: #000;
+}
+
+.newsLetter form{
+	margin-top: 12px;
+
+}
+
+input[type=email]{
+	float: left;
+	width: 185px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 36px;
+	color: #c1c1c1;
+	padding: 0 14px;
+	background-color: #f8f8f8;
+	border:1px solid #bbb;
+	border-top-left-radius:6px;
+	border-bottom-left-radius: 6px; 
+	outline:none;
+}
+
+input[type=submit]{
+	float: left;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 36px;
+	background: #f8f8f8;
+	color: #ed1c24;
+	border:1px solid #ed1c24;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	padding: 0 15px;
+	outline:none;
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	color: #fff;
+	background-color: #ed1c24;
+}
+
+.socialNetwokIcons{
+	display: inline-block;
+	margin-top: 55px;
+}
+
+.socialNetwokIcons li{
+	float: left;
+	margin-right: 10px;
+}
+.socialNetwokIcons li:last-child{
+	margin: 0;
+}
+
+.socialNetwokIcons a{
+	display: table-cell;
+	height: 30px;
+	width: 30px;
+	border:1px solid #ed1c24;
+	border-radius: 50%;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.socialNetwokIcons a:hover{
+	background-color: #ed1c24;
+}
+
+.fbIcon{
+	background-position: -1px -34px;
+	width: 9px;
+	height: 19px;
+}
+.fb:hover .fbIcon{
+	background-position: -149px -34px;
+	width: 9px;
+	height: 19px
+}
+
+.twitterIcon{
+	background-position: -23px -37px;
+	width: 16px;
+	height: 14px;
+}
+.twitter:hover .twitterIcon{
+	background-position: -119px -37px;
+	width: 16px;
+	height: 14px;
+}
+
+.pinterestIcon{
+	background-position: -55px -35px;
+	width: 18px;
+	height: 18px;
+}
+.pinterest:hover .pinterestIcon{
+	background-position: -174px -35px;
+	width: 18px;
+	height: 18px;
+}
+
+.googlePlusIcon{
+	background-position: -89px -36px;
+	width: 15px;
+	height: 16px;
+}
+.googlePlus:hover .googlePlusIcon{
+	background-position: -208px -35px;
+	width: 15px;
+	height: 16px;
+}
+
+footer{
+	margin-top:40px; 
+	padding: 10px 0;
+	border-top: 1px solid #ddd;
+}
+
+footer span{
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #aaa;
+}
+
+footer ul{
+	float: right;
+}
+
+footer li{
+	float: left;
+	margin-right: 25px;
+}
+footer li:last-child{
+	margin: 0;
+}
+
+footer a{
+	display: block;
+}
+
+.visaIcon{
+	background-position: -78px -80px;
+	width: 37px;
+	height: 13px;
+}
+.masterCardIcon{
+	background-position: -135px -73px;
+	width: 45px;
+	height: 26px;
+}
+.americanExpIcon{
+	background-position: -194px -78px;
+	width: 50px;
+	height: 17px;
+}
+.payPalIcon{
+	background-position: -258px -80px;
+	width: 46px;
+	height: 14px;
+}
+.codIcon{
+	background-position: -326px -81px;
+	width: 29px;
+	height: 12px;
+}
+.unionIcon{
+	background-position: -386px -80px;
+	width: 34px;
+	height: 13px;
+}
+.jcbIcon{
+	background-position: -449px -72px;
+	width: 29px;
+	height: 28px;
+}
+.discoverIcon{
+	background-position: -500px -82px;
+	width: 46px;
+	height: 8px;
+}
+.clubIcon{
+	background-position: -570px -72px;
+	width: 30px;
+	height: 19px;
+}
