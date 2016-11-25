@@ -27,7 +27,6 @@ a{
 /*--------Css begins---------------*/
 body{
 	font-family:'Open Sans' , sans-serif;
-	font-weight: 400;
 }
 
 h1{
@@ -68,7 +67,6 @@ header{
 
 .logo{
 	float: left;
-	display: block;
 	margin-right: 20px;
 }
 
@@ -156,19 +154,13 @@ header{
 /*-------------Section Banner---------------*/
 
 .banner{
-	/*background: url(../images/hero-banner.jpg) no-repeat 50% 50%;
-	background-size: cover;
-	text-align: left;*/
 	position: relative;
-
 }
-
 .banner img{
 	display: block;
 	width: 100%;
 	height: 601px;
 }
-
 .bannerContent{
 	position: absolute;
 	top: 0;
@@ -177,14 +169,11 @@ header{
 	height: 100%;
     text-align: center;
 }
-
 .contentWrap{
-	display: block;
-	margin-left: 60%;
-	margin-top: 10%;
+	float: right;
+	margin: 155px 50px 0 0;
     text-align: left;
 }
-
 .contentWrap h1{
 	display: inline-block;
 	font-size: 60px;
@@ -192,12 +181,10 @@ header{
 	color: #fff;
 	border-bottom: 3px solid #ee1c25;
 }
-
 .contentWrap h2{
 	color: #fff;
 	margin-top: 8px;
 }
-
 .contentWrap p{
 	max-width: 320px;
 	font-size: 14px;
@@ -209,9 +196,9 @@ header{
 .contentWrap a{
 	margin-right: 5px;
 }
-
 .btnWhite{
 	display: inline-block;
+	min-width: 120px;
 	border-radius: 20px;
 	font-size: 16px;
 	font-weight: 300;
@@ -221,44 +208,38 @@ header{
 	text-align: center;
 	border: 1px solid #fff;
 }
-
 .btnWhite:hover{
 	background-color: #ee1c25;
 }
-
-.btnWhite span{
-	display: inline-block;
-	min-width: 120px;
-}
-
 .pageIndicator{
 	display:inline-block;
-	position: absolute;
-    top: 75%;
-    right: 50%;
+	margin: 140px auto 0 auto;
 }
-
 .pageIndicator li{
 	float: left;
+	margin-right: 8px;
+}
+.pageIndicator li.clear{
+	float:none;
+	margin:0px;
+}
+.pageIndicator li a{
+	display: block;
 	height: 5px;
 	width: 5px;
 	border: 1px solid #fff;
 	border-radius: 50%;
-	margin-right: 8px;
 }
-.pageIndicator li:nth-child(3){
+.pageIndicator a:hover{
 	background-color: #fff;
 }
-
-
 .bannerFooter{
 	display: inline-block;
 	border-top: 1px solid #564f4d;
 	padding-top: 20px;
-	margin-top: 130px;
+	margin-top: 20px;
 
 }
-
 .bannerFooter li{
 	float: left;
 	text-align: left;
@@ -268,7 +249,6 @@ header{
 .bannerFooter li:last-child{
 	margin:0;
 }
-
 .bannerFooter p{
 	float: left;
 	font-size: 12px;
@@ -277,12 +257,9 @@ header{
 	color: #fff;
 	white-space: pre;
 }
-
 .bannerFooter p span{
 	font-weight: 600;
 }
-
-
 .iconWrap{
 	float: left;
 	height: 25px;
@@ -292,7 +269,6 @@ header{
 	margin-right: 15px;
 	position: relative;
 }
-
 .arrowIcon{
 	background-position: -117px -9px;
 	width: 13px;
@@ -317,8 +293,6 @@ header{
 	top: 20%;
 	left: 24%;
 }
-
-
 .sliderIconRight{
 	background-position: 0px -70px;
 	width: 19px;
@@ -328,7 +302,6 @@ header{
 	right: 10px;
 	cursor: pointer;
 }
-
 .sliderIconLeft{
 	background-position: -39px -70px;
 	width: 19px;
@@ -340,12 +313,10 @@ header{
 }
 
 /*------------Saree Types-----------*/
-
 .sareeTypes{
 	padding: 35px 0 50px 0;
 	text-align: center;
 }
-
 .sareeTypes h1{
 	font-size: 40px;
 	line-height: 42px;
@@ -353,44 +324,37 @@ header{
 	color: #999;
 	margin-bottom: 20px;
 }
-
 .border{
 	display: inline-block;
     width: 100px;
     border-bottom: 1px solid #e7e7e7;
     vertical-align: middle;
 }
-	
 .text{
 	display: inline-block;
 	vertical-align: middle;
 	margin:0 15px;
 }
-
 .sareeTypes h3{
 	margin-top: 25px;
 }
-
 .designList{
 	display: inline-block;
 	margin: 45px 0px 75px 0px;
 }
-
 .designList li{
 	float: left;
 	width: 460px;
+	height: 550px;
 	margin-right: 20px;
 	position: relative;
 }
-
 .designList li:last-child{
 	margin: 0;
 }
-
 .designList li img{
 	display: block;
 }
-
 .designInfo{
 	background-color: rgba(0,0,0,0.7);
 	position: absolute;
@@ -399,7 +363,6 @@ header{
 	width: 100%;
 	padding: 35px 0px 40px 0px;
 }
-
 .designInfo .designName{
 	display: inline-block;
 	vertical-align: middle;
@@ -410,25 +373,20 @@ header{
 	font-weight: 400;
 	color: #fff;
 }
-
 .designInfo .btnWhite{
 	margin-left: 50px;
 	vertical-align: middle;
 }
-
-
 .bollywoodLehenga{
 	display: inline-block;
 	border: 1px solid #eee;
 	margin: 45px 0px 10px;
 }
-
 .bollywoodLehenga li{
 	float: left;
 	width: 312px;
 	cursor: pointer;
 }
-
 .boxHeading{
 	text-align: left;
 	padding: 15px 0 0 20px;
@@ -438,7 +396,6 @@ header{
 .boxHeading h3{
 	margin:0;
 }
-
 .boxHeading span{
 	display: inline-block;
 	font-family: 'PT Sans', sans-serif;
@@ -447,16 +404,14 @@ header{
 	font-weight: 400;
 	color: #b4b4b4;
 }
-
 .boxContent{
 	padding: 9px 0px;
 	position: relative;
+	min-height: 450px;
 }
-
 .boxContent img{
 	display: inline-block;
 }
-
 .btnWrapper{
 	position: absolute;
 	top: 0;
@@ -469,53 +424,41 @@ header{
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-
 .btnWrapper .btnWhite{
 	margin-bottom: 15px;
 	display: block;
 }
-
 .bollywoodLehenga li:hover .btnWrapper{
 	opacity: 1;
 	padding-top: 320px;	
 }
-
-
 .bollywoodLehenga li:hover .boxHeading h3{
 	color: #ee1c25;
 }
-
 .sareeTypes .pageIndicator{
-	position: static;
 	margin-bottom: 55px;
+	margin-top: 0px;
 }
-
-.sareeTypes .pageIndicator li{
+.sareeTypes .pageIndicator a{
 	border: 1px solid #a4a4a4;
 }
-
-.sareeTypes .pageIndicator li:nth-child(3){
+.sareeTypes .pageIndicator a:hover{
 	background-color: #999;
 }
 
 /*------------Banner Ombree Digital--------*/
-
-.ombre img{
-	display: block;
-	width: 100%;
-	height: 611px;	
+.ombre{
+	background: url(../images/ombree-digital.jpg) no-repeat;
+	background-size: cover;
 }
-
 .ombreWrap{
-	margin-top: 90px;
-	margin-left: 50%;
+	float: right;
+	padding:90px 0 50px 0;
 	text-align: left;
 }
-
 .ombreWrap h2{
 	color: #000;
 }
-
 .ombreWrap p{
 	display: inline-block;
 	font-size: 13px;
@@ -524,7 +467,6 @@ header{
 	margin-top: 10px;
 	color: #8c847d;
 }
-
 .continue{
 	display: block;
 	font-size: 13px;
@@ -535,23 +477,22 @@ header{
 .continue:hover{
 	text-decoration: underline;
 }
-
 .ombreWrap .btnSmall{
 	display: block;
 	width: 150px;
 	padding: 10px 0px;
 	margin-top: 15px;
 }
-
 .sareeDesigns{
 	display: inline-block;
 	margin-top: 80px;
 }
-
 .sareeDesigns li {
 	margin-right: 20px;
 	position: relative;
 	float: left;
+	width: 220px;
+	height: 212px;
 
 }
 .sareeDesigns li:last-child{
@@ -560,36 +501,26 @@ header{
 }
 .sareeDesigns li img{
 	display: block;
-	width: 220px;
-	height: 212px;
 }
-
 .sareeDesigns .btnWhite{
 	position: absolute;
+	min-width: 80px;
 	bottom: 10px;
 	right:  60px;
 	padding:10px;
 	margin-bottom: 0px;
 }
-
-.sareeDesigns .btnWhite span{
-	min-width: 80px;
-}
-
 /*------------View story---------*/
 .viewStory{
 	text-align: center;
 	padding: 28px 0 42px 0;
 }
-
-
 .logoFull{
 	display: inline-block;
 }
 .logoFull img{
 	display: block;
 }
-
 .viewStory p{
 	margin-top: 15px;
 	font-size: 18px;
@@ -597,14 +528,12 @@ header{
 	font-weight: 300;
 	color: #000;
 }
-
 .viewStory .btnWhite{
 	color: #ed1c24;
 	border: 1px solid #ed1c24;
 	margin-top: 15px;
 	padding: 10px 25px;
 }
-
 .viewStory .btnWhite:hover{
 	color: #fff;
 }
@@ -616,7 +545,6 @@ header{
 	border-top: 1px solid #ddd;
 	position: relative; 
 }
-
 .scrollTop{
 	display: inline-block;
 	text-align: center;
@@ -624,7 +552,6 @@ header{
 	top: 20%;
 	right: 10%;
 }
-
 .scrollTop a{
 	display: inline-block;
 	vertical-align: middle;
@@ -633,7 +560,6 @@ header{
 	border:1px solid #ed1c24;
 	border-radius: 50%;
 }
-
 .scrollTop span{
 	display: block;
 	font-family: 'Lato', sans-serif;
@@ -643,18 +569,15 @@ header{
 	color: #ed1c24;
 	margin-top: 5px;
 }
-
 .scrollIcon{
 	background-position: -206px -10px;
 	width: 11px;
 	height: 6px;
 }
-
 .column{
 	float: left;
 	margin-right: 50px;
 }
-
 .column h1{
 	font-size: 18px;
 	line-height: 34px;
@@ -663,32 +586,26 @@ header{
 	border-bottom: 3px solid #ccc;
 	width: 140px;
 }
-
 .columnItems{
 	margin-top: 10px;
 }
-
 .columnItems a{
 	font-size: 14px;
 	line-height: 28px;
 	font-weight: 400;
 	color: #000;
 }
-
 .columnItems a:hover{
 	color: #ed1c24;
 }
-
 .newsLetter{
-margin-right: 0px;
-float: right;
+	margin-right: 0px;
+	float: right;
 }
 .newsLetter h1{
 	border: none;
 	width: initial;
 }
-
-
 .newsLetter span{
 	display: block;
 	font-size: 12px;
@@ -696,12 +613,9 @@ float: right;
 	font-weight: 400;
 	color: #000;
 }
-
 .newsLetter form{
 	margin-top: 12px;
-
 }
-
 input[type=email]{
 	float: left;
 	width: 185px;
@@ -716,7 +630,6 @@ input[type=email]{
 	border-bottom-left-radius: 6px; 
 	outline:none;
 }
-
 input[type=submit]{
 	float: left;
 	font-size: 18px;
@@ -731,17 +644,14 @@ input[type=submit]{
 	outline:none;
 	cursor: pointer;
 }
-
 input[type=submit]:hover{
 	color: #fff;
 	background-color: #ed1c24;
 }
-
 .socialNetwokIcons{
 	display: inline-block;
 	margin-top: 55px;
 }
-
 .socialNetwokIcons li{
 	float: left;
 	margin-right: 10px;
@@ -749,7 +659,6 @@ input[type=submit]:hover{
 .socialNetwokIcons li:last-child{
 	margin: 0;
 }
-
 .socialNetwokIcons a{
 	display: table-cell;
 	height: 30px;
@@ -759,11 +668,9 @@ input[type=submit]:hover{
 	vertical-align: middle;
 	text-align: center;
 }
-
 .socialNetwokIcons a:hover{
 	background-color: #ed1c24;
 }
-
 .fbIcon{
 	background-position: -1px -34px;
 	width: 9px;
@@ -774,7 +681,6 @@ input[type=submit]:hover{
 	width: 9px;
 	height: 19px
 }
-
 .twitterIcon{
 	background-position: -23px -37px;
 	width: 16px;
@@ -785,7 +691,6 @@ input[type=submit]:hover{
 	width: 16px;
 	height: 14px;
 }
-
 .pinterestIcon{
 	background-position: -55px -35px;
 	width: 18px;
@@ -796,7 +701,6 @@ input[type=submit]:hover{
 	width: 18px;
 	height: 18px;
 }
-
 .googlePlusIcon{
 	background-position: -89px -36px;
 	width: 15px;
@@ -807,13 +711,11 @@ input[type=submit]:hover{
 	width: 15px;
 	height: 16px;
 }
-
 footer{
 	margin-top:40px; 
 	padding: 10px 0;
 	border-top: 1px solid #ddd;
 }
-
 footer span{
 	float: left;
 	font-size: 14px;
@@ -821,11 +723,9 @@ footer span{
 	line-height: 26px;
 	color: #aaa;
 }
-
 footer ul{
 	float: right;
 }
-
 footer li{
 	float: left;
 	margin-right: 25px;
@@ -833,11 +733,9 @@ footer li{
 footer li:last-child{
 	margin: 0;
 }
-
 footer a{
 	display: block;
 }
-
 .visaIcon{
 	background-position: -78px -80px;
 	width: 37px;
