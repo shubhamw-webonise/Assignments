@@ -95,7 +95,7 @@ header{
 	line-height: 66px;
 	color: #fff;
 	border-top: 4px solid #282828;
-	padding: 0px 14px;
+	padding: 0px 10px;
 }
 .nav li a:hover, .nav li a.active{
 	border-top: 4px solid #b8272b;
@@ -103,16 +103,20 @@ header{
 }
 .globeIcon{
 	position: relative;
-	background: url(../images/globe-icon.png);
-	height: 19px;
-	width: 19px;
+	background: url(../images/globe-icon.png) no-repeat center center;
+	height: 66px;
+	width: 35px;
 	float: right;
-	margin: 25px 0 0 5px;
+	border-top: 4px solid #282828;
+}
+.globeIcon:hover{
+	border-top: 4px solid #b8272b;
+	background-color: #1a1a1a
 }
 .badge{
 	position: absolute;
-	top: -8px;
-	right: -1px;
+	top: 15px;
+	right: 7px;
 	height: 13px;
 	width: 10px;
 	font-size: 8px;
