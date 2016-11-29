@@ -2,6 +2,23 @@
 <html>
 <head>
 	<title>Data Mapper</title>
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="apple-touch-icon-precomposed" href="apple-icon-precomposed.png" />
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
 
 <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -15,12 +32,14 @@
 			<img src="images/logo.png" alt="logo"/>
 		</a>
 
-		<a href="#" class="user" title="Account">
+		<a href="#" class="user" title="Account">	
 			Admin
 			<i class="icon-caret-down"></i>
 		</a>
 
-		<a href="#" title="Notifications" class=" spriteIcon globeIcon"></a>
+		<a href="#" title="Notifications" class="globeIcon">
+			<div class="badge">4</div>
+		</a>
 
 		<ul class="nav">
 			<li><a href="#" class="active" title="Home">Surveys</a></li>
@@ -35,13 +54,13 @@
 <!-- Header Ends -->
 <section class="links">
 	<div class="container">
-			<span>Lake Wheeler_GCP_01</span>
+			<h1>Lake Wheeler_GCP_01</h1>
 		<div class="wrapper">
-			<a href="#" class="dropDown">
+			<button href="#" class="dropDown">
 			<i class="icon-chevron-down"></i>
-			</a>
+			</button>
 
-			<ul class="editActions">
+			<ul class="editActions">	
 				<li>
 					<a href="#">Share</a>
 				</li>
@@ -125,16 +144,17 @@
 					</h2>
 					<ul class="boxContent">
 						<li>
-							<img src="images/orthomosiac.jpg" alt="orthomosiac">
-
-							<span class="imgName">
+						<div class="imgWrap">
+							<img src="images/orthomosiac.jpg" alt="orthomosiac"/>
+						</div>
+							<h3 class="imgName">
 								Standard Orthomosiac
-							</span>
+							</h3>
 
 							<div class="wrapper">
-								<a href="#" class="dropDown">
+								<button class="dropDown">
 								<i class="icon-chevron-down"></i>
-								</a>
+								</button>
 
 								<ul class="editActions">
 									<li>
@@ -160,16 +180,18 @@
 							<div class="clear"></div>
 						</li>
 						<li>
-							<img src="images/volume.jpg" alt="orthomosiac">
+						<div class="imgWrap">
+							<img src="images/volume.jpg" alt="volume measurement"/>
+						</div>
 
-							<span class="imgName">
+							<h3 class="imgName">
 								Volume Measurement
-							</span>
+							</h3>
 
 							<div class="wrapper">
-								<a href="#" class="dropDown">
+								<button class="dropDown">
 								<i class="icon-chevron-down"></i>
-								</a>
+								</button>
 
 								<ul class="editActions">
 									<li>
@@ -195,16 +217,18 @@
 							<div class="clear"></div>
 						</li>
 						<li>
-							<img src="images/plant.jpg" alt="orthomosiac">
+						<div class="imgWrap">
+							<img src="images/plant.jpg" alt="plant based cutting"/>
+						</div>
 
-							<span class="imgName">
+							<h3 class="imgName">
 								Plant Based Row Cutting
-							</span>
+							</h3>
 
 							<div class="wrapper">
-								<a href="#" class="dropDown">
+								<button class="dropDown">
 								<i class="icon-chevron-down"></i>
-								</a>
+								</button>
 
 								<ul class="editActions">
 									<li>
@@ -236,38 +260,48 @@
 					<h2 class="boxHeading">
 						Apply Algorithm
 					</h2>
-					<ul>
-						<li class="applyList">
-							<img src="images/plant-row.jpg" alt="">
-							<span>Plant Based Row Cutting</span>
+					<ul class="applyList">
+						<li>
+						<div class="imgWrap">
+							<img src="images/plant-row.jpg" alt="plant-row">
+						</div>	
+							<h3>Plant Based Row Cutting</h3>
 							<a href="#" title="Apply">Apply</a>
 
 							<div class="clear"></div>
 						</li>
-						<li class="applyList">
-							<img src="images/field-uniformity.jpg" alt="">
-							<span>Field Uniformity tool</span>
+						<li>
+						<div class="imgWrap">
+							<img src="images/field-uniformity.jpg" alt="field-uniformity"/>
+						</div>	
+							<h3>Field Uniformity tool</h3>
 							<a href="#" title="Apply">Apply</a>
 
 							<div class="clear"></div>
 						</li>
-						<li class="applyList">
-							<img src="images/field-uniformity.jpg" alt="">
-							<span>Field Uniformity tool</span>
+						<li>
+						<div class="imgWrap">
+							<img src="images/field-uniformity.jpg" alt="field-uniformity"/>
+						</div>	
+							<h3>Field Uniformity tool</h3>
 							<a href="#" title="Apply">Apply</a>
 
 							<div class="clear"></div>
 						</li>
-						<li class="applyList">
-							<img src="images/field-uniformity.jpg" alt="">
-							<span>Field Uniformity tool</span>
+						<li>
+						<div class="imgWrap">
+							<img src="images/field-uniformity.jpg" alt="field-uniformity"/>
+						</div>	
+							<h3>Field Uniformity tool</h3>
 							<a href="#" title="Apply">Apply</a>
 
 							<div class="clear"></div>
 						</li>
-						<li class="applyList">
-							<img src="images/field-uniformity.jpg" alt="">
-							<span>Field Uniformity tool</span>
+						<li>
+						<div class="imgWrap">
+							<img src="images/field-uniformity.jpg" alt="field-uniformity">
+						</div>	
+							<h3>Field Uniformity tool</h3>
 							<a href="#" title="Apply">Apply</a>
 
 							<div class="clear"></div>
@@ -277,15 +311,16 @@
 		</div>
 
 		<div class="rightSection">
-			<img src="images/map-plugin.jpg" alt="Map-plugin">
-			
+			<div class="imgWrap">
+				<img src="images/map-plugin.jpg" alt="Map-plugin"/>
+			</div>
 			<div class="boxWrapper">
 				<h2 class="boxHeading">
 					<i class="icon-comment-alt"></i>
 					Comments (2)
 				</h2>
-
-				<ul class="comments">
+			<div class="comments">
+				<ul>
 					<li>
 						<i class=" spriteIcon cloudIcon">1</i>
 
@@ -296,7 +331,7 @@
 						</div>
 
 						<div class="dateBox">
-							<label>11/15/15</label>
+							<span>11/15/15</span>
 							<span>10:12 AM</span>
 						</div>
 						<div class="clear"></div>
@@ -308,7 +343,7 @@
 						</div>
 
 						<div class="dateBox">
-							<label>11/15/15</label>
+							<span>11/15/15</span>
 							<span>10:12 AM</span>
 						</div>
 						<div class="clear"></div>
@@ -322,16 +357,18 @@
 						</div>
 
 						<div class="dateBox">
-							<label>11/15/15</label>
+							<span>11/15/15</span>
 							<span>10:12 AM</span>
 						</div>
 						<div class="clear"></div>
 					</li>
 				</ul>
 				<form>
-					<textarea name="" id="" cols="100" rows="3" placeholder="Add a comment..."></textarea>
+					<textarea wrap="off" placeholder="Add a comment..."></textarea>
 					<input type="submit" value="Comment">
+					<div class="clear"></div>
 				</form>
+			</div>
 			</div>
 		</div>
 		<div class="clear"></div>		
