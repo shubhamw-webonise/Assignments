@@ -352,9 +352,6 @@ header{
 	height: 58px;
 	width: 58px;
 }
-.imgWrap img{
-	display: block;
-}
 .applyList h3{
 	float: left;
 	font-size: 14px;
@@ -385,9 +382,6 @@ header{
 .rightSection .imgWrap{
 	height: 549px;
 	width: 801px;
-}
-.imgWrap img{
-	display: block;
 }
 .icon-comment-alt{
 	color: #717171;
