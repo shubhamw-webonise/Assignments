@@ -1,0 +1,227 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, 
+a,img,ol, ul, li,footer, header,nav
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+footer,header,menu,nav,section{
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;  
+}
+
+a{
+	text-decoration: none;
+}
+/*--------Css begins---------------*/
+body{
+	font-family: 'Lato', sans-serif;
+}
+.spriteIcon{
+	background: url(../images/sprite.png) no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	width: 30px;
+	height: 30px;
+}
+.baseHeader{
+	padding: 12px 0px;
+	border-bottom: 1px solid #ddd;
+}
+.baseHeader .dropdown{
+	margin-right: 35px;
+}
+.baseHeader .siteBtn{
+	font-family: 'Exo 2', sans-serif;
+ 	font-weight: 700;
+ 	font-size: 14px;
+	line-height: 26px;
+	color: #1a237e;
+	border: none;
+	padding: 0;
+}
+.btn-default:active:focus, .btn-default:active:hover,.btn-default:hover,.open>.dropdown-toggle.btn-default:hover,.btn-default:active,.open>.dropdown-toggle.btn-default:focus .siteBtn:hover,.siteBtn:active .siteBtn:focus .siteBtn:active:focus{
+	background-color: #fff;
+	color: #1a237e;
+}
+.btnLang{
+	font-weight: 700;
+ 	font-size: 12px;
+	line-height: 26px;
+	color: #1a237e;
+	padding: 0 12px;
+	border:1px solid #c5cae9;
+	border-radius: 0;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.08);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.08);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.08);
+}
+.btnLang:hover,.btnLang:focus,.login:hover{
+	background-color: #c5cae9;
+	text-decoration: none;
+}
+.login{
+	display: inline-block;
+	font-weight: 700;
+ 	font-size: 14px;
+	line-height: 26px;
+	color: #1a237e;
+	border:1px solid #c5cae9;
+	padding: 0 15px 0 20px;
+	margin-left: 37px;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.08);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.08);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.08);
+}
+/*--------Main Header---------------*/
+.mainHeader{
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	padding:0;
+	margin-bottom: 0;
+}
+.logo{
+	width: 70px;
+	height: 79px;
+	float: left;
+	margin-right: 98px;
+}
+.logo img{
+	display: block;
+}
+.mainNav li{
+	margin-right: 35px;
+}
+.mainNav li:last-child{
+	margin: 0;
+}
+.mainHeader .mainNav li a{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 700;
+ 	font-size: 15px;
+	line-height: 79px;
+	padding: 0;
+	color: #444;
+}
+.mainHeader .mainNav li a:hover,.mainHeader .mainNav li a:focus,.mainNav li a.active{
+	color: #a01d26;
+}
+.icon-search,.icon-search:hover,.icon-search:focus{
+	color: #9c9c9c;
+	margin-top: 30px;
+	text-decoration: none;
+}
+/*----------Banner--------------------*/
+.banner{
+	background: url(../images/banner.jpg) no-repeat;
+	background-size: cover;
+	padding: 228px 0 20px 0;
+}
+.bannerBtn{
+	font-weight: 700;
+ 	font-size: 16px;
+	line-height: 52px;
+	border: none;
+	padding: 0 12px;
+	color: #a01d26;
+	background-color: #dbd6c2;
+}
+.postIcon{
+	background-position: 0 0;
+	margin-right: 20px;
+}
+.flagIcon{
+	background-position: -56px 0;
+	margin-right: 20px;
+}
+.lookupIcon{
+	background-position: -117px 0;
+	margin-right: 20px;
+}
+/*----------Main Content--------------------*/
+.mainContent{
+	padding-top: 30px;
+}
+.shareInfo{
+	background-color: #a01d26;
+	margin-bottom: 30px;
+}
+.shareInfo h2{
+	font-size: 16px;
+	line-height: 60px;
+	color: #fff;
+}
+.shareInfo h2 span{
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 60px;
+	color: #fff;
+}
+.shareInfo a{
+	padding:11px 0;
+}
+.speakerIcon{
+	background-position: -55px -29px;
+	height: 38px;
+	width: 38px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.shareInfo .plusWrap{
+	padding-top: 15px;
+}
+.plusIcon{
+	background-position: -1px -36px;
+	border:1px solid #fff;
+}
+.videoWrap{
+	position: relative;
+	height: 320px;
+	width: 770px;
+}
+.videoWrap img{
+	display: block;
+}
+.videoText{
+	padding:35px 0 0 30px;
+	position: absolute;
+	top:150px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(to top, rgba(0,0,0,0.8),
+  rgba(0,0,0,0));
+}
+.videoText .date{
+	display: inline-block;
+	font-size: 15px;
+	line-height: 24px;
+	color: #fff;
+	margin-right: 10px;
+}
+.videoText label{
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	color: #fff;
+}
+.videoText .border{
+	border-right: 2px solid #808280;
+}
+.videoText h1{
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 38px;
+	color: #fff;
+	max-width: 600px;
+}
