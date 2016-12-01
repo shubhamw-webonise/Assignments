@@ -185,12 +185,14 @@ body{
 	border:1px solid #fff;
 }
 .videoWrap{
+	display: block;
 	position: relative;
 	height: 320px;
 	width: 770px;
+	margin-bottom: 60px;
 }
 .videoWrap img{
-	display: block;
+	display: block;	
 }
 .videoText{
 	padding:35px 0 0 30px;
@@ -224,4 +226,32 @@ body{
 	line-height: 38px;
 	color: #fff;
 	max-width: 600px;
+}
+.sectionHeading{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 40px;
+	color: #444;
+}
+.sectionDropDown{
+	font-size: 16px;
+	line-height: 38px;
+	color: #a01d26;
+	padding: 0 14px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.08);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.08);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.08);
+	margin-bottom: 30px;
+}
+.icon-angle-down{
+	color: #a01d26;
+	margin-left: 27px;
+	vertical-align: middle;
+}
+.golferImgWrapper{
+	height: 154px;
+	width: 370px;
 }
