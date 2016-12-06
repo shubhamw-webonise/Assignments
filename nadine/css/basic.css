@@ -211,6 +211,12 @@ body{
 .contactInfo li span{
 	font-weight: 700;
 }
+.contactInfo li a{
+	color: #fff;
+}
+.contactInfo li a:hover{
+	text-decoration: underline;
+}
 .awards li{
 	margin-bottom: 40px;
 }
