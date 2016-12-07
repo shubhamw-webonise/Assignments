@@ -21,46 +21,59 @@ ol, ul {
 }
 
 a,a:hover,a:focus{
+	color: #fff;
 	text-decoration: none;
 }
 /*--------Css begins---------------*/
 body{
 	font-family: 'Open Sans', sans-serif;
 }
-.spriteIcon{
+.sprite{
 	background: url(../images/sprite.png) no-repeat;
 	display: inline-block;
 	vertical-align: middle;
-	height: 25px;
-	width: 25px;
 }
 .baseHeader{
 	padding: 13px 0 14px 0;
 	background: #3b3e46;
 }
-.baseHeader span{
+.baseHeader li span{
+	display: inline-block;
+	vertical-align: middle;
 	font-size: 13px;
 	line-height: 25px;
 	color: #fff;
 }
-.address{
+.baseHeader li{
+	float: left;
 	margin-right: 30px;
 }
 .mapIcon{
 	background-position: -40px 2px; 
+	height: 25px;
+	width: 25px;
 }
 .phoneIcon{
 	background-position: 2px 2px; 
+	height: 25px;
+	width: 25px;
 }
 .mainHeader{
-	padding: 28px 0 26px 0;
+	padding: 27px 0;
 	background: #fff;
 }
 .mainHeader{
 	margin-bottom: 0;
 }
+.logo{
+	width: 387px;
+	height: 44px;
+}
 .mainHeader li{
 	margin-right: 33px;
+}
+.mainHeader li a{
+	text-transform: uppercase;
 }
 .mainHeader li:last-child{
 	margin: 0;
@@ -78,6 +91,7 @@ body{
 	padding: 175px 0 230px 0;
 }
 .banner h1{
+	text-transform: uppercase;
 	font-size: 72px;
 	line-height: 74px;
 	color: #fff;
@@ -93,17 +107,22 @@ body{
 	color: #fff;
 	margin-top: 20px;
 }
-.banner a{
+.btnRed{
 	display:inline-block;
 	font-size: 14px;
 	font-weight: 700;
-	line-height: 64px;
+	line-height: 16px;
 	color: #fff;
+	text-transform: uppercase;
 	background: #e63547;
-	padding: 0 78px;
+	padding: 24px 78px;
 	margin-top: 45px;
 }
+.btnRed:hover{
+	background-color: #e51328;
+}
 .features h1{
+	text-transform: uppercase;
 	font-size: 36px;
 	line-height: 38px;
 	color: #000;
@@ -126,23 +145,26 @@ body{
 	border-radius: 50%;
 }
 .features{
-	padding: 113px 0;
+	padding: 110px 0 100px 0;
 }
 .features ul{
 	margin-top: 48px;
-}
-.features ul li{
-	margin-bottom: 20px;
 }
 .features ul img{
 	margin: 0 auto;
 }
 .features ul h3{
+	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 25px;
 	color: #000;
 	margin-top: 50px;
+}
+.imgWrap{
+	height: 101px;
+	width: 98px;
+	margin: 0 auto;
 }
 .features ul p{
 	font-size: 14px;
@@ -153,7 +175,7 @@ body{
 .mission{
 	background: url(../images/mission-banner.jpg) no-repeat 50% 50%;
 	background-size: cover;
-	padding: 155px 0 175px 0;
+	padding: 155px 0 165px 0;
 }
 .mission h1{
 	font-size: 36px;
@@ -165,6 +187,7 @@ body{
 	font-size: 18px;
 	line-height: 32px;
 	color: #fff;
+	margin-bottom: 10px;
 }
 .clients{
 	padding: 59px 0 78px;
@@ -178,12 +201,13 @@ body{
 	margin-top: 60px;
 }
 .clients li{
-	margin-bottom: 20px;
+	height: 101px;
+	text-align: center;
 }
 .clients img{
 	margin: 0 auto;
 }
-.infoLinks{
+footer{
 	background: #2b2c31;
 	padding: 56px 0 35px 0;
 }
@@ -217,18 +241,58 @@ body{
 .contactInfo li a:hover{
 	text-decoration: underline;
 }
-.awards li{
-	margin-bottom: 40px;
-}
 .awards li img{
 	margin: 0 auto;
 }
-footer{
+.copyright{
 	background: #26272b;
 	padding: 36px 0 17px 0;
 }
-footer span{
+.copyright span{
 	font-size: 14px;
 	line-height: 35px;
 	color: #64676c;
+}
+/*--------Media Queries------*/
+@media only screen and (max-device-width: 480px) {
+	.baseHeader li span{
+		font-size: 11px;
+		line-height: 13px;
+		max-width: 230px;
+	}
+	.mainHeader{
+		padding: 0;
+	}
+	.container>.navbar-header{
+		margin: 0;
+	}
+	.logo{
+		margin-top: 10px;
+		width: 75%;
+	}
+	.banner,.features,.mission,.clients,footer{
+		padding: 30px 0;
+	}
+	.btnRed{
+		padding: 20px 46px;
+	}
+	.banner h1,.features h1,.mission h1{
+    font-size: 36px;
+    line-height: 38px;
+	}
+	.features ul li{
+	margin-bottom: 20px;
+}
+	.clients h1{
+	font-size: 26px;
+    line-height: 28px;
+	}
+	.banner p,.mission p{
+    font-size: 18px;
+    line-height: 24px;
+	}
+	.awards li{
+	height: 86px;
+	margin-bottom: 40px;
+	}
 }
