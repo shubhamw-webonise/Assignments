@@ -132,6 +132,7 @@ header{
 	font-weight: 700;
 	color: #646464;
 	border: 1px solid #cac9c9;
+	min-width: 174px;
 }
 .planSelect a:hover,.planSelect a.active{
 	background-color: #f9e9ea;
@@ -141,12 +142,10 @@ header{
 .planSelect a:first-child{
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
-	padding: 0 53px;
 }
 .planSelect a:last-child{
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
-	padding: 0 25px;
 }
 .planSelect a span{
 	font-weight: 400;
@@ -184,59 +183,62 @@ header{
 	color: #c1272c;
 	text-transform: none;
 }
-.features li span{
+.features li span,.mobDiv span{
 	display: block;
 	text-transform: none;
 	font-weight: 500;
 }
 .plans{
 	float: left;
-	width: 187px;
-	border-right: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-}
-.listWrapper ul.plans:nth-child(2){
-	border-left: 1px solid #ccc; 
-}
-
-.plans:hover{
-	background-color: #f8f8f8;
-}
-.plans:hover .planHeading{
-	background-color: #c1272c;
+	width: 187px;	
 }
 .planHeading{
 	text-align: center;
 	text-transform: uppercase;
-	background-color: #646464;
-	padding: 10px 0 15px 0;
-}
-.planHeading h2{
 	font-size: 18px;
-	line-height: 20px;
+	line-height: 28px;
 	font-weight: 600;
 	color: #fff;
-	margin-bottom: 5px;
+	background-color: #646464;
+	padding: 8px 0 6px 0;
 }
 .planHeading span{
+	display: block;
 	font-size: 12px;
-	line-height: 14px;
+	line-height: 24px;
 	font-weight: 600;
 	color: #ccc;
 }
-.businessPack{
-	background-color: #515151;
-	padding:24px 0 22px;
+.bestStdPack .planHeading span{
+	color: #f5aaab;
 }
-.stdPack{
-	padding:24px 0 22px;
+.lite .planHeading{
+	border-top-left-radius: 6px;
+}
+.businessPack .planHeading{
+	background-color: #515151;
+	padding:19px 0;
+	border-top-right-radius: 6px;
+}
+.stdPack .planHeading{
+	padding:19px 0;
+}
+.bestStdPack{
+	background-color: #f8f8f8;
+}
+.bestStdPack .planHeading{
+	background-color: #c1272c;
 }
 .fa-plus{
 	color: #fff;
 	font-size: 15px;
 }
-.businessPack h2,.stdPack h2{
-	margin-bottom: 0;
+.planInfo{
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.businessPack .planInfo{
+	border-right: 1px solid #ccc;
 }
 .planInfo li{
 	border-bottom: 1px solid #eceaea;
@@ -373,18 +375,23 @@ footer p a{
 		font-size: 34px;
 		line-height: 80px;
 		border-radius:4px;
+		min-width: 280px;
 	}
 	.planSelect a:first-child{
 		margin-bottom: 20px;
+	}
+	.stdPack .planHeading,.businessPack .planHeading,.planHeading{
+		padding: 25px 0;
+	}
+	.planHeading{
+		border-top-right-radius: 6px;
+		border-top-left-radius: 6px;
 	}
 	.planHeading h2 {
     font-size: 36px;
     line-height: 38px;
     margin-bottom: 10px;
 	}
-	.businessPack h2,.stdPack h2{
-	margin-bottom: 0;
-}
 	.planHeading span {
     font-size: 18px;
     line-height: 20px;
@@ -400,33 +407,34 @@ footer p a{
 		float: none;
 		width: 100%;
 		margin: 0 auto 50px;
-		border-left: 1px solid #ccc;
+	}
+	.planInfo{
+		border: 1px solid #ccc;
+		border-top: none;
 	}
 	.planInfo li{
-		font-size: 24px;
-		line-height: 26px;
-		padding: 20px 0;
+		padding: 60px 0;
 	}
-	.btnWhite {
-    font-size: 32px;
-    padding: 15px 20px;
-}
-.contactUs {
-    font-size: 26px;
-}
-.socialIcons a {
-    width: 55px;
-    height: 54px;
-  }
-.fa-twitter, .fa-linkedin, .fa-youtube {
-    font-size: 34px;
-    line-height: 54px;
+	.btnWhite{
+		font-size: 28px;
+		padding: 18px 26px;
 	}
-footer p {
-    font-size: 22px;
+	.contactUs {
+	    font-size: 26px;
+	}
+	.socialIcons a {
+	    width: 55px;
+	    height: 54px;
+	  }
+	.fa-twitter, .fa-linkedin, .fa-youtube {
+	    font-size: 34px;
+	    line-height: 54px;
+		}
+	footer p {
+	    font-size: 22px;
+	}
 }
-}
-@media only screen and (min-device-width:768px) and (max-device-width:1024px){
+@media only screen and (min-device-width:768px) and (max-device-width:991px){
 	.container{
 		width: 767px;
 		padding: 0 15px;
@@ -446,6 +454,9 @@ footer p {
 		display: none;
 	}
 	.planSelect a{
+		min-width: 240px;
+	}
+	.planSelect a{
 		font-size: 26px;
 		line-height: 65px;
 	}
@@ -455,10 +466,17 @@ footer p {
 	.plans{
 		width:355px;
 		margin-bottom: 50px;
-		border-left: 1px solid #ccc;
+	}
+	.planInfo{
+		border: 1px solid #ccc;
+		border-top: none;
 	}
 	.listWrapper ul.plans:nth-child(even){
 		margin-right: 20px;
+	}
+	.planHeading{
+		border-top-right-radius: 6px;
+		border-top-left-radius: 6px;
 	}
 	.planHeading h2 {
     font-size: 26px;
@@ -470,34 +488,26 @@ footer p {
     line-height: 16px;
 	}
 	.mobDiv{
-		font-size: 20px;
-		line-height: 22px;
 		display: block;
 		max-width: 80%;
     	margin: 0 auto 10px;
 	}
 	.planInfo li{
-		font-size: 26px;
-		line-height: 28px;
-		padding: 15px 0;
+		padding: 30px 0;
 	}
-	.btnWhite {
-    font-size: 18px;
-    padding: 8px 14px;
-}
-.contactUs {
-    font-size: 26px;
-}
-.socialIcons a {
-    width: 55px;
-    height: 54px;
-  }
-.fa-twitter, .fa-linkedin, .fa-youtube {
-    font-size: 34px;
-    line-height: 54px;
+	.contactUs {
+	    font-size: 26px;
 	}
-footer p {
-    font-size: 22px;
-}
+	.socialIcons a {
+	    width: 55px;
+	    height: 54px;
+	  }
+	.fa-twitter, .fa-linkedin, .fa-youtube {
+	    font-size: 34px;
+	    line-height: 54px;
+		}
+	footer p {
+	    font-size: 22px;
+	}
 }
 
