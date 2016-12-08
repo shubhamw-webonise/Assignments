@@ -176,7 +176,7 @@ header{
 }
 .dispTable{
 	display: table-cell;
-	height: 57px;
+	height: 58px;
 	width: 191px;
 	text-align: left;
 	vertical-align: middle;
@@ -194,7 +194,8 @@ header{
 .plans{
 	float: left;
 	width: 187px;
-	border-right: 1px solid #ccc; 
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 .listWrapper ul.plans:nth-child(2){
 	border-left: 1px solid #ccc; 
@@ -225,12 +226,26 @@ header{
 	font-weight: 600;
 	color: #ccc;
 }
+.businessPack{
+	background-color: #515151;
+	padding:24px 0 22px;
+}
+.stdPack{
+	padding:24px 0 22px;
+}
+.fa-plus{
+	color: #fff;
+	font-size: 15px;
+}
+.businessPack h2,.stdPack h2{
+	margin-bottom: 0;
+}
 .planInfo li{
 	border-bottom: 1px solid #eceaea;
 	font-size: 16px;
 	line-height: 18px;
 	color: #232323;
-	padding: 19px 0 20px 0;
+	padding: 20px 0;
 }
 .planInfo li:first-child{
 	font-size: 45px;
@@ -240,6 +255,7 @@ header{
 }
 .planInfo li:last-child{
 	padding: 30px 0 27px 0;
+	border-bottom: none;
 }
 .planInfo li sup{
 	font-size: 17px;
@@ -368,29 +384,108 @@ footer p a{
     line-height: 38px;
     margin-bottom: 10px;
 	}
+	.businessPack h2,.stdPack h2{
+	margin-bottom: 0;
+}
 	.planHeading span {
     font-size: 18px;
     line-height: 20px;
 	}
 	.mobDiv{
 		font-size: 16px;
+		line-height: 18px;
 		display: block;
 		max-width: 75%;
     	margin: 0 auto 20px;
 	}
 	.plans{
 		float: none;
-		width: 100%;
+		width: 90%;
 		margin: 0 auto 50px;
 		border-left: 1px solid #ccc;
 	}
 	.planInfo li{
 		font-size: 24px;
 		line-height: 26px;
+		padding: 20px 0;
 	}
 	.btnWhite {
     font-size: 32px;
     padding: 15px 20px;
+}
+.contactUs {
+    font-size: 26px;
+}
+.socialIcons a {
+    width: 55px;
+    height: 54px;
+  }
+.fa-twitter, .fa-linkedin, .fa-youtube {
+    font-size: 34px;
+    line-height: 54px;
+	}
+footer p {
+    font-size: 22px;
+}
+}
+@media only screen and (min-device-width:768px) and (max-device-width:1024px){
+	.container{
+		width: 767px;
+		padding: 0 15px;
+	}
+	.logo{
+    	height: auto;
+    	padding: 5px 0;
+	}
+	.navbarToggle{
+		display: block;
+	}
+	.nav,.btnRed{
+		display: none;
+		float: none;
+	}
+	.features{
+		display: none;
+	}
+	.planSelect a{
+		font-size: 26px;
+		line-height: 65px;
+	}
+	.businessPack h2,.stdPack h2{
+	margin-bottom: 0;
+}
+	.plans{
+		width:355px;
+		margin-bottom: 50px;
+		border-left: 1px solid #ccc;
+	}
+	.listWrapper ul.plans:nth-child(even){
+		margin-right: 20px;
+	}
+	.planHeading h2 {
+    font-size: 26px;
+    line-height: 28px;
+    margin-bottom: 10px;
+	}
+	.planHeading span {
+    font-size: 14px;
+    line-height: 16px;
+	}
+	.mobDiv{
+		font-size: 20px;
+		line-height: 22px;
+		display: block;
+		max-width: 80%;
+    	margin: 0 auto 10px;
+	}
+	.planInfo li{
+		font-size: 26px;
+		line-height: 28px;
+		padding: 15px 0;
+	}
+	.btnWhite {
+    font-size: 18px;
+    padding: 8px 14px;
 }
 .contactUs {
     font-size: 26px;
