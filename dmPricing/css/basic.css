@@ -393,12 +393,12 @@ footer p a{
 		font-size: 16px;
 		line-height: 18px;
 		display: block;
-		max-width: 75%;
+		max-width: 80%;
     	margin: 0 auto 20px;
 	}
 	.plans{
 		float: none;
-		width: 90%;
+		width: 100%;
 		margin: 0 auto 50px;
 		border-left: 1px solid #ccc;
 	}
