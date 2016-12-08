@@ -1,0 +1,410 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, 
+a,img,ol, ul, li,footer, header,nav
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+footer,header,menu,nav,section{
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;  
+}
+
+a{
+	text-decoration: none;
+}
+/*--------Css begins---------------*/
+body{
+	font-family: 'Raleway', sans-serif;
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header{
+	background-color: #212121;
+}
+.container{
+	width: 940px;
+	margin: 0 auto;
+}
+.clearFix:before,
+.clearFix:after {
+    content: " ";
+    display: table; 
+}
+
+.clearFix:after {
+    clear: both;
+}
+
+.logo{
+	float: left;
+	width: 232px;
+	height: 58px;
+	padding: 15px 0px;
+}
+.logo img{
+	display: block;
+}
+.navbarToggle{
+	display: none;
+	float: right;
+    padding: 9px 10px;
+    margin-top: 12px;
+    margin-right: 15px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.fa-bars{
+	color: #fff;
+	font-size: 25px;
+}
+.btnRed{
+	float: right;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 18px;
+	color: #fff;
+	background: #c1272d;
+	border-radius: 15px;
+	padding:5px 18px;
+	margin-top: 32px;
+}
+.btnRed:hover {
+    background-color: #e51328;
+}
+.login{
+	margin-right: 22px;
+}
+.nav{
+	float: right;
+	margin-right: 10px;
+}
+.nav li{
+	float: left;
+}
+.nav li a{
+	text-transform: uppercase;
+	display: block;
+	font-size: 12px;
+	line-height: 85px;
+	font-weight: 700;
+	color: #fff;
+	border-top: 4px solid #212121;
+	padding: 0px 11px;
+}
+.nav li a:hover, .nav li a.active{
+	border-top: 4px solid #b8272b;
+	background-color: #1a1a1a;
+}
+.membershipPlan{
+	padding: 88px 0 140px 0;
+	text-align: center;
+}
+.membershipPlan h1{
+	text-transform: uppercase;
+	font-size: 32px;
+	line-height: 34px;
+	font-weight: 500;
+	color: #000;
+	margin-bottom: 60px;
+}
+.planSelect{
+	display: inline-block;
+	margin-bottom: 52px;
+}
+.planSelect a{
+	float: left;
+	font-size: 17px;
+	line-height: 50px;
+	font-weight: 700;
+	color: #646464;
+	border: 1px solid #cac9c9;
+}
+.planSelect a:hover,.planSelect a.active{
+	background-color: #f9e9ea;
+	border:1px solid #c1272d ;
+	color: #c1272d;
+}
+.planSelect a:first-child{
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	padding: 0 53px;
+}
+.planSelect a:last-child{
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	padding: 0 25px;
+}
+.planSelect a span{
+	font-weight: 400;
+}
+.features{
+	float: left;
+	text-align: left;
+	margin-top: 165px;
+}
+.features li{
+	border-top:1px solid #eceaea; 
+	font-size: 12px;
+	line-height: 16px;
+	color: #505050;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.mobDiv{
+	display: none;
+	font-size: 12px;
+	line-height: 16px;
+	color: #505050;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.dispTable{
+	display: table-cell;
+	height: 57px;
+	width: 191px;
+	text-align: left;
+	vertical-align: middle;
+}
+.dispTable a,.mobDiv a{
+	display: block;
+	color: #c1272c;
+	text-transform: none;
+}
+.features li span{
+	display: block;
+	text-transform: none;
+	font-weight: 500;
+}
+.plans{
+	float: left;
+	width: 187px;
+	border-right: 1px solid #ccc; 
+}
+.listWrapper ul.plans:nth-child(2){
+	border-left: 1px solid #ccc; 
+}
+
+.plans:hover{
+	background-color: #f8f8f8;
+}
+.plans:hover .planHeading{
+	background-color: #c1272c;
+}
+.planHeading{
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #646464;
+	padding: 10px 0 15px 0;
+}
+.planHeading h2{
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 5px;
+}
+.planHeading span{
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 600;
+	color: #ccc;
+}
+.planInfo li{
+	border-bottom: 1px solid #eceaea;
+	font-size: 16px;
+	line-height: 18px;
+	color: #232323;
+	padding: 19px 0 20px 0;
+}
+.planInfo li:first-child{
+	font-size: 45px;
+	line-height: 47px;
+	color: #6d6e71;
+	padding: 13px 0px 12px 0px;
+}
+.planInfo li:last-child{
+	padding: 30px 0 27px 0;
+}
+.planInfo li sup{
+	font-size: 17px;
+}
+.planInfo li sub{
+	font-size: 15px;
+}
+.fa-check{
+	color: #6aa233;
+}
+.fa-times{
+	color: #bcbec0;
+}
+.btnWhite{
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 39px;
+	padding: 0 20px;
+	color: #c1272c;
+	border:1px solid #c1272c;
+}
+.btnWhite:hover{
+	background-color: #c1272c;
+	color: #fff; 
+}
+.listWrapper{
+	margin-bottom: 58px;
+}
+.contactUs{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height:28px;
+	color: #c1272c;
+}
+.contactUs a{
+	color: #c1272c;
+	font-weight: 700;
+}
+.contactUs a:hover{
+	text-decoration: underline;
+}
+footer{
+	padding: 55px 0 23px 0;
+	background-color: #1a1818;
+	text-align: center;
+}
+.logoVertical{
+	display:block;
+	width: 130px;
+	height: 105px;
+	margin: 0 auto 59px;
+}
+.logo-vertical img{
+	display: block;
+}
+.socialIcons{
+	display: inline-block;
+	margin-bottom: 60px;
+}
+.socialIcons a{
+	float: left;
+	width: 36px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin-right: 40px;
+}
+.socialIcons a:last-child{
+	margin: 0;
+}
+.socialIcons a:hover{
+	background-color: #c1272c;
+}
+.fa-twitter,.fa-linkedin,.fa-youtube{
+	color: #000;
+	font-size: 15px;
+	line-height: 35px;
+}
+footer p{
+	font-size: 16px;
+	line-height:30px;
+	color: #929292;
+}
+footer p a{
+	display: block;
+	color: #929292;
+	text-decoration: underline;
+}
+@media only screen and (max-device-width:767px){
+	.container{
+		width: 767px;
+		padding: 0 15px;
+	}
+	.logo{
+    	height: auto;
+    	padding: 5px 0;
+	}
+	.navbarToggle{
+		display: block;
+	}
+	.nav,.btnRed{
+		display: none;
+		float: none;
+	}
+	.features{
+		display: none;
+	}
+	.membershipPlan h1{
+		font-size: 52px;
+		line-height: 54px;
+	}
+	.planSelect a{
+		float: none;
+		display: block;
+		font-size: 34px;
+		line-height: 80px;
+		border-radius:4px;
+	}
+	.planSelect a:first-child{
+		margin-bottom: 20px;
+	}
+	.planHeading h2 {
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 10px;
+	}
+	.planHeading span {
+    font-size: 18px;
+    line-height: 20px;
+	}
+	.mobDiv{
+		font-size: 16px;
+		display: block;
+		max-width: 75%;
+    	margin: 0 auto 20px;
+	}
+	.plans{
+		float: none;
+		width: 100%;
+		margin: 0 auto 50px;
+		border-left: 1px solid #ccc;
+	}
+	.planInfo li{
+		font-size: 24px;
+		line-height: 26px;
+	}
+	.btnWhite {
+    font-size: 32px;
+    padding: 15px 20px;
+}
+.contactUs {
+    font-size: 26px;
+}
+.socialIcons a {
+    width: 55px;
+    height: 54px;
+  }
+.fa-twitter, .fa-linkedin, .fa-youtube {
+    font-size: 34px;
+    line-height: 54px;
+	}
+footer p {
+    font-size: 22px;
+}
+}
+
