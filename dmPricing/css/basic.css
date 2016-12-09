@@ -152,6 +152,12 @@ header{
 	text-align: left;
 	margin-top: 165px;
 }
+.tabs{
+	float: left;
+}
+#tab2{
+	display: none;
+}
 .features li{
 	border-top:1px solid #eceaea; 
 }
@@ -363,6 +369,9 @@ footer p a{
 	}
 	.features{
 		display: none;
+	}
+	.tabs{
+		float: none;
 	}
 	.membershipPlan h1{
 		font-size: 42px;
