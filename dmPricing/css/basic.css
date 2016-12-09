@@ -44,11 +44,9 @@ header{
     content: " ";
     display: table; 
 }
-
 .clearFix:after {
     clear: both;
 }
-
 .logo{
 	float: left;
 	padding: 15px 0px;
@@ -60,8 +58,7 @@ header{
 	display: none;
 	float: right;
     padding: 9px 10px;
-    margin-top: 12px;
-    margin-right: 15px;
+    margin-top: 25px;
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -157,11 +154,6 @@ header{
 }
 .features li{
 	border-top:1px solid #eceaea; 
-	font-size: 12px;
-	line-height: 16px;
-	color: #505050;
-	text-transform: uppercase;
-	font-weight: 700;
 }
 .mobDiv{
 	display: none;
@@ -171,17 +163,24 @@ header{
 	text-transform: uppercase;
 	font-weight: 700;
 }
-.dispTable{
+.features h3{
 	display: table-cell;
 	height: 58px;
 	width: 191px;
-	text-align: left;
 	vertical-align: middle;
+	font-size: 12px;
+	line-height: 16px;
+	color: #505050;
+	text-transform: uppercase;
+	font-weight: 700;
 }
-.dispTable a,.mobDiv a{
+.features h3 a,.mobDiv a{
 	display: block;
 	color: #c1272c;
 	text-transform: none;
+}
+.features h3 a:hover{
+	text-decoration: underline;
 }
 .features li span,.mobDiv span{
 	display: block;
@@ -192,75 +191,77 @@ header{
 	float: left;
 	width: 187px;	
 }
-.planHeading{
+.plans h2{
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 18px;
-	line-height: 28px;
+	line-height: 20px;
 	font-weight: 600;
 	color: #fff;
 	background-color: #646464;
-	padding: 8px 0 6px 0;
+	padding: 12px 0 10px 0;
 }
-.planHeading span{
+.plans h2 span{
 	display: block;
 	font-size: 12px;
-	line-height: 24px;
+	line-height: 14px;
 	font-weight: 600;
+	margin-top: 10px;
 	color: #ccc;
 }
-.bestStdPack .planHeading span{
+.bestStdPack h2 span{
 	color: #f5aaab;
+	margin: 0 0 10px 0;
 }
-.lite .planHeading{
+.lite h2{
 	border-top-left-radius: 6px;
 }
-.businessPack .planHeading{
+.businessPack h2{
 	background-color: #515151;
-	padding:19px 0;
+	padding:23px 0;
 	border-top-right-radius: 6px;
 }
-.stdPack .planHeading{
-	padding:19px 0;
+.stdPack h2{
+	padding:23px 0;
 }
 .bestStdPack{
 	background-color: #f8f8f8;
 }
-.bestStdPack .planHeading{
+.bestStdPack h2{
 	background-color: #c1272c;
 }
 .fa-plus{
 	color: #fff;
 	font-size: 15px;
 }
-.planInfo{
+.plans ul{
 	border-left: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
-.businessPack .planInfo{
+.businessPack ul{
 	border-right: 1px solid #ccc;
 }
-.planInfo li{
+.plans ul li{
 	border-bottom: 1px solid #eceaea;
 	font-size: 16px;
 	line-height: 18px;
 	color: #232323;
 	padding: 20px 0;
 }
-.planInfo li:first-child{
+.plans ul li:first-child{
 	font-size: 45px;
 	line-height: 47px;
 	color: #6d6e71;
 	padding: 13px 0px 12px 0px;
 }
-.planInfo li:last-child{
+.plans ul li:last-child{
 	padding: 30px 0 27px 0;
 	border-bottom: none;
 }
-.planInfo li sup{
+.plans ul li sup{
 	font-size: 17px;
 }
-.planInfo li sub{
+.plans ul li sub{
 	font-size: 15px;
 }
 .fa-check{
@@ -287,6 +288,7 @@ header{
 	margin-bottom: 58px;
 }
 .contactUs{
+	display: block;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	line-height:28px;
@@ -346,14 +348,11 @@ footer p a{
 	color: #929292;
 	text-decoration: underline;
 }
+/*-------------Media Queries------------------------*/
 @media only screen and (max-device-width:767px){
 	.container{
-		width: 767px;
+		width: 100%;
 		padding: 0 15px;
-	}
-	.logo{
-    	height: auto;
-    	padding: 5px 0;
 	}
 	.navbarToggle{
 		display: block;
@@ -366,33 +365,30 @@ footer p a{
 		display: none;
 	}
 	.membershipPlan h1{
-		font-size: 52px;
-		line-height: 54px;
+		font-size: 42px;
+		line-height: 44px;
 	}
 	.planSelect a{
 		float: none;
 		display: block;
-		font-size: 34px;
-		line-height: 80px;
+		font-size: 24px;
+		line-height: 70px;
 		border-radius:4px;
-		min-width: 280px;
+		min-width: 240px;
 	}
 	.planSelect a:first-child{
 		margin-bottom: 20px;
 	}
-	.stdPack .planHeading,.businessPack .planHeading,.planHeading{
+	.stdPack h2,.businessPack h2,.plans h2{
 		padding: 25px 0;
 	}
-	.planHeading{
+	.plans h2{
 		border-top-right-radius: 6px;
 		border-top-left-radius: 6px;
+		font-size: 24px;
+    	line-height: 26px;
 	}
-	.planHeading h2 {
-    font-size: 36px;
-    line-height: 38px;
-    margin-bottom: 10px;
-	}
-	.planHeading span {
+	.plans h2 span {
     font-size: 18px;
     line-height: 20px;
 	}
@@ -400,48 +396,37 @@ footer p a{
 		font-size: 16px;
 		line-height: 18px;
 		display: block;
-		max-width: 80%;
+		padding: 0 10%;
     	margin: 0 auto 20px;
 	}
 	.plans{
 		float: none;
-		width: 100%;
+		width: 250px;
 		margin: 0 auto 50px;
 	}
-	.planInfo{
+	.plans ul{
 		border: 1px solid #ccc;
 		border-top: none;
 	}
-	.planInfo li{
-		padding: 60px 0;
+	.plans ul li{
+		padding: 50px 0;
 	}
 	.btnWhite{
-		font-size: 28px;
-		padding: 18px 26px;
+		font-size: 18px;
+		padding: 10px 18px;
 	}
 	.contactUs {
 	    font-size: 26px;
 	}
-	.socialIcons a {
-	    width: 55px;
-	    height: 54px;
-	  }
-	.fa-twitter, .fa-linkedin, .fa-youtube {
-	    font-size: 34px;
-	    line-height: 54px;
-		}
 	footer p {
 	    font-size: 22px;
 	}
 }
+/*----------------------Ipad Specific--------------------*/
 @media only screen and (min-device-width:768px) and (max-device-width:991px){
 	.container{
-		width: 767px;
+		width: 100%;
 		padding: 0 15px;
-	}
-	.logo{
-    	height: auto;
-    	padding: 5px 0;
 	}
 	.navbarToggle{
 		display: block;
@@ -462,50 +447,47 @@ footer p a{
 	}
 	.businessPack h2,.stdPack h2{
 	margin-bottom: 0;
-}
+	}
+	.listWrapper{
+		max-width: 710px;
+		margin: 0 auto;
+	}
 	.plans{
-		width:355px;
+		width:354px;
 		margin-bottom: 50px;
 	}
-	.planInfo{
+	.plans ul{
 		border: 1px solid #ccc;
 		border-top: none;
 	}
-	.listWrapper ul.plans:nth-child(even){
-		margin-right: 20px;
+	.fa-plus{
+		font-size: 20px;
 	}
-	.planHeading{
-		border-top-right-radius: 6px;
+	.lite h2,.stdPack h2{
 		border-top-left-radius: 6px;
 	}
-	.planHeading h2 {
+	.bestStdPack h2,.businessPack h2{
+		border-top-right-radius: 6px;
+	}
+	.plans h2 {
     font-size: 26px;
     line-height: 28px;
-    margin-bottom: 10px;
 	}
-	.planHeading span {
+	.plans h2 span {
     font-size: 14px;
     line-height: 16px;
 	}
 	.mobDiv{
 		display: block;
-		max-width: 80%;
+		padding: 0 10%;
     	margin: 0 auto 10px;
 	}
-	.planInfo li{
+	.plans ul li{
 		padding: 30px 0;
 	}
 	.contactUs {
 	    font-size: 26px;
 	}
-	.socialIcons a {
-	    width: 55px;
-	    height: 54px;
-	  }
-	.fa-twitter, .fa-linkedin, .fa-youtube {
-	    font-size: 34px;
-	    line-height: 54px;
-		}
 	footer p {
 	    font-size: 22px;
 	}
