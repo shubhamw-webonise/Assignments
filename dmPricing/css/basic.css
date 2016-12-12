@@ -286,7 +286,7 @@ header{
 	color: #c1272c;
 	border:1px solid #c1272c;
 }
-.btnWhite:hover{
+.btnWhite:hover,.bestStdPack a.active{
 	background-color: #c1272c;
 	color: #fff; 
 }
@@ -344,14 +344,17 @@ footer{
 	font-size: 15px;
 	line-height: 35px;
 }
-footer p{
+footer span{
+	display: block;
 	font-size: 16px;
 	line-height:30px;
 	color: #929292;
 }
-footer p a{
-	display: block;
+footer span a{
+	display:block;
 	color: #929292;
+}
+footer span a:hover{
 	text-decoration: underline;
 }
 /*-------------Media Queries------------------------*/
@@ -427,7 +430,7 @@ footer p a{
 	.contactUs {
 	    font-size: 26px;
 	}
-	footer p {
+	footer span {
 	    font-size: 22px;
 	}
 }
@@ -497,7 +500,7 @@ footer p a{
 	.contactUs {
 	    font-size: 26px;
 	}
-	footer p {
+	footer span {
 	    font-size: 22px;
 	}
 }
